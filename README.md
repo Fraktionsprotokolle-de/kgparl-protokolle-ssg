@@ -12,15 +12,6 @@ Die XML-Quellen werden aus dem öffentlichen GitHub-Repository bezogen:
 - **Repository**: [Fraktionsprotokolle-de/fraktionsprotokolle_web](https://github.com/Fraktionsprotokolle-de/fraktionsprotokolle_web)
 - Die XML-Dateien befinden sich im Verzeichnis `xml_quellen/`
 
-### Aktuelle Abdeckung
-
-Die Edition umfasst derzeit Protokolle von:
-- **CDU/CSU-Fraktion**: 1.–7. Wahlperiode (1949–1976)
-- **SPD-Fraktion**: 1.–8. Wahlperiode (1949–1980)
-- **FDP-Fraktion**: 1.–9. Wahlperiode (1949–1983)
-- **CSU-Landesgruppe**: 1.–9. Wahlperiode (1949–1983)
-- **GRÜNE-Fraktion**: 10.–11. Wahlperiode (1983–1990)
-
 ## Projektstruktur
 
 ### Hauptverzeichnisse
