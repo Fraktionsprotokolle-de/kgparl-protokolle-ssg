@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/Fraktionsprotokolle-de/fraktionsprotokolle_web/main/xml_schema/fraktionsprotokolle.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://raw.githubusercontent.com/Fraktionsprotokolle-de/fraktionsprotokolle_web/main/xml_schema/fraktionsprotokolle.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="spd-07_1973-03-13-t1514_WN" rendition="fraktionsprotokolle">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title level="a">Fraktionssitzung (Tonbandtranskript)</title>
+				<title level="s">Digitale Edition im Rahmen des Programms "Fraktionen im Deutschen Bundestag 1949–2005"</title>
+				<editor>
+					<name type="Person" role="Mitarbeiter-KGParl" ref="#JuengerkesSven"/>
+					<name type="Person" role="Mitarbeiter-KGParl" ref="#HindenburgBarbara"/>
+				</editor>
+				<respStmt>
+					<resp>An der Edition waren außerdem folgende Personen beteiligt</resp>
+					<name type="Person" role="Mitarbeiter-KGParl" ref="#WeistenhoeferSimon"/>
+					<name type="Person" role="Mitarbeiter-KGParl" ref="#RaaschUte"/>
+					<name type="Person" role="Mitarbeiter-KGParl" ref="#RabusSimon"/>
+				</respStmt>
+				<respStmt>
+					<resp>Finale Bearbeitung der XML-Datei</resp>
+					<name type="Person" role="Mitarbeiter-KGParl" ref="#JuengerkesSven"/>
+				</respStmt>
+			</titleStmt>
+			<editionStmt>
+				<p>Version 1.0, basierend auf dem Bearbeitungstand der Edition vom 08. September 2022</p>
+			</editionStmt>
+			<publicationStmt>
+				<publisher>
+					<orgName xml:id="KGParl">Kommission für Geschichte des Parlamentarismus und der politischen Parteien e. V. (KGParl)</orgName>
+					<address>
+						<street>Schiffbauerdamm 40</street>
+						<postCode>10117</postCode>
+						<name type="Ort">
+							<country>Deutschland</country>
+							<settlement type="town">Berlin</settlement>
+						</name>
+					</address>
+					<email>info@fraktionsprotokolle.de</email>
+				</publisher>
+				<pubPlace>Berlin</pubPlace>
+				<date when="2022-06-09"/>
+				<idno type="url">https://fraktionsprotokolle.de/</idno>
+				<availability status="restricted">
+					<licence>Alle Rechte vorbehalten. © Copyright KGParl</licence>
+				</availability>
+			</publicationStmt>
+			<seriesStmt>
+				<title xml:lang="de">Maschinenlesbare Transkriptionen von Protokollen und Audiomitschnitten der Fraktionen und Gruppen des Deutschen Bundestags von 1949 bis 2005</title>
+				<title xml:lang="en">Machine-Readable Transcriptions of Protocols and Audio Recordings of the German Bundestags Parliamentary Groups from 1949 to 2005</title>
+				<respStmt>
+					<resp>Herausgegeben von der</resp>
+					<name type="Organisation" ref="#KGParl">Kommission für Geschichte des Parlamentarismus und der politischen Parteien (KGParl)</name>
+				</respStmt>
+				<idno type="isbn"/>
+			</seriesStmt>
+			<notesStmt>
+				<note type="Kommentar-Edition">Vergleiche auch die Projektbeschreibung sowie die Dokumentation dieser Web-Application unter Über diese Webseite.</note>
+				<note type="Erstveroeffentlichung">Das vorliegende Protokoll ist eine digitalisierte und für die TEI-XML-Version leicht angepasste Variante der Erstveröffentlichung: <bibl type="single-item">
+						<title level="a">Die SPD-Fraktion im Deutschen Bundestag. Sitzungsprotokolle 1972-1976</title>
+						<title level="s">Quellen zur Geschichte des Parlamentarismus und der politischen Parteien. Vierte Reihe. Deutschland seit 1945. Band 8/VI</title>
+						<author>Sven Jüngerkes</author>
+						<pubPlace>Düsseldorf</pubPlace>
+						<date>2020</date>
+						<idno type="DNB">https://d-nb.info/1225216788</idno>
+					</bibl>
+				</note>
+				<note type="Verbundene-Protokolle">
+					<listRelation>
+						<relation name="Erwaehnung" ref="#"/>
+					</listRelation>
+				</note>
+			</notesStmt>
+			<sourceDesc>
+				<listObject>
+					<object type="Audio" xml:id="Vorlage">
+						<objectIdentifier>
+							<institution>Archiv der sozialen Demokratie (AdsD)</institution>
+							<idno>6/TONS000018</idno>
+							<objectName>Fraktionssitzung vom 13. 03. 1973</objectName>
+						</objectIdentifier>
+						<msContents>
+							<p>Transkribiertes und ediertes Protokoll einer Sitzung der SPD-Bundestagsfraktion am 13. März 1973.</p>
+						</msContents>
+						<physDesc>
+							<objectDesc form="protokoll">
+								<supportDesc>
+									<support>Tonband/Audioaufzeichnung</support>
+									<extent>128 Minuten</extent>
+								</supportDesc>
+							</objectDesc>
+						</physDesc>
+					</object>
+				</listObject>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<editorialDecl>
+				<p>Zu den ausführlichen Editionshinweisen vgl. https://www.fraktionsprotokolle.de/exist/apps/Fraktionsprotokolle/editionshinweise.html</p>
+				<correction>
+					<p>Die Schreibweise in der Quelle wurde behutsam der damals gültigen deutschen Rechtschreibung angepasst. Tonbandtranskiptionen, die durch die KGParl angefertigt wurden, sind in neuer deutscher Rechtschreibung gehalten. Durch Verschreibung bedingte Durchstreichungen wurden weggelassen. Korrekturen wurden in der Form dokumentiert, dass die korrigierte Fassung wiedergegeben wurde und, sofern der Sinn verändert wurde, die ursprüngliche Form in den Anmerkungen erscheint. Einfache Syntaxfehler wurden in der Regel stillschweigend korrigiert. Größere Korrekturen werden in den Anmerkungen nachgewiesen. Generell wurde versucht, den Charakter des Textkorpus zu erhalten.</p>
+				</correction>
+				<normalization>
+					<p>Ausländische Personennamen wurden in der Regel quellennah wiedergegeben und werden, wie andere Personennamen auch, über eine eindeutige Referenz identifiziert.</p>
+				</normalization>
+				<stdVals>
+					<p>Die Die Target-Referenzierung auf Drucksachen und Protokolle des Deutschen Bundestags innerhalb eines Bibl-Elements der Typen "btd" und "btp" erfolgt über einen Resolvermechanismus. Beispiel: <![CDATA[<bibl type="btd">
+                     <ref type="external" target="01/45"/>
+                  </bibl>]]> erzeugt eine URL, die auf das beim Dt. Bundestag gehostete PDF der Drucksache "01/45" verweist. Sowohl bei Drucksachen wie bei Plenarprotokollen des Bundestags ist der Inhalt des target-Attributs immer gleich aufgebaut: Die ersten beiden Ziffern geben die Wahlperiode an, hier 1. Wahlperiode. Die Ziffern hinter dem "/" geben entweder die Drucksachennummer (im Falle von Typ "btd") oder die Sitzungsnummer (im Falle von Typ "btp") an. Somit können Drucksachen oder Plenarprotokolle problemlos über das "Dokumentations- und Informationssystem für Parlamentsmaterialien" des Deutschen Bundestags, URL: https://dip.bundestag.de/, gefunden werden.</p>
+				</stdVals>
+			</editorialDecl>
+			<projectDesc>
+				<p>In dieser Online-Edition »Fraktionen im Deutschen Bundestag 1949–2005« werden die historischen Sitzungsprotokolle der Fraktionen im Deutschen Bundestag seit 1949 veröffentlicht. Im Zentrum steht die textkritische Prüfung und digitale Aufbereitung der archivischen Vorlagen. Primäres Ziel ist die Herausgabe einer wissenschaftlich gesicherten, authentischen und anwendungsbereiten (Lese-)Fassung jedes Sitzungsprotokolls.</p>
+			</projectDesc>
+			<classDecl>
+				<taxonomy xml:id="FP-Dokumenttyp">
+					<category xml:id="WZ">
+						<catDesc>Wortprotokoll zeitgenössisch</catDesc>
+					</category>
+					<category xml:id="WN">
+						<catDesc>Wortprotokoll nachträglich</catDesc>
+					</category>
+					<category xml:id="EP">
+						<catDesc>Verlauf-/Ergebnisprotokoll</catDesc>
+					</category>
+					<category xml:id="VE">
+						<catDesc>Verzeichnis</catDesc>
+					</category>
+					<category xml:id="AN">
+						<catDesc>Andere Protokolltypen</catDesc>
+					</category>
+				</taxonomy>
+			</classDecl>
+			<tagsDecl>
+				<rendition xml:id="smcap" scheme="css">font-variant: small-caps</rendition>
+				<rendition xml:id="sup" scheme="css">font-size: .7em; vertical-align: super;</rendition>
+				<rendition xml:id="sub" scheme="css">font-size: .7em; vertical-align: sub;</rendition>
+				<rendition xml:id="u" scheme="css">text-decoration: underline;</rendition>
+			</tagsDecl>
+		</encodingDesc>
+		<profileDesc>
+			<creation>
+				<date when="1973-03-13">
+					<time type="start" when="15:14:00"/>
+					<time type="end"/>
+					<time type="duration" dur="PT02H08M20S"/>
+				</date>
+				<name type="Ort">Bonn</name>
+				<name type="Person" role="Sitzungsleitung" ref="#WehnerHerbert_1949-09-07"/>
+				<idno type="sitzung">
+					<idno type="wp">07</idno>
+					<idno type="Fraktion-Landesgruppe">SPD</idno>
+					<idno type="sitzungsabfolge">1</idno>
+				</idno>
+			</creation>
+			<langUsage>
+				<language ident="de-DE">German</language>
+			</langUsage>
+			<textClass>
+				<catRef target="WN" scheme="FP-Dokumenttyp"/>
+			</textClass>
+		</profileDesc>
+		<revisionDesc>
+			<change when="2021" who="textloop" status="textloop-1_raw" n="1"/>
+			<change when="2021-05-14" who="textloop" status="textloop-2_basic" n="2"/>
+			<change when="2021-06-16" who="#JuengerkesSven" status="final" n="3"/>
+		</revisionDesc>
+	</teiHeader>
+	<text>
+		<front>
+			<div type="SVPListe">
+				<head>Sitzungsverlauf:</head>
+				<list type="SVP">
+					<item xml:id="spd-07_1973-03-13-t1514_WN_SVP-1" corresp="#spd-07_1973-03-13-t1514_WN_div_SVP-1">A. TOP 1: Bericht von Bundesminister <name type="Person" role="Erwaehnung" ref="#SchmidtHelmut_1953-10-06">Schmidt</name> über die europäischen Reaktionen auf die Weltwährungskrise. – Diskussion der Fraktion über den Bericht.</item>
+					<item xml:id="spd-07_1973-03-13-t1514_WN_SVP-2" corresp="#spd-07_1973-03-13-t1514_WN_div_SVP-2">B. TOP 2: Informationen (Gespräche mit dem Vorsitzenden der Gewerkschaft der Polizei; Umgestaltung des Bundesgrenzschutzes; Bundeszuschuss zur Rentenversicherung; Wohn- und Arbeitssituation der Abgeordneten im Gebäude in der Bonner Saemisch-Straße).</item>
+					<item xml:id="spd-07_1973-03-13-t1514_WN_SVP-3" corresp="#spd-07_1973-03-13-t1514_WN_div_SVP-3">C. Vorbereitung der Plenarsitzung: TOP 3: Tagesordnung und Ablauf der Plenarsitzungen. – TOP 12: Informationen durch die Bundesregierung im Bundestag. – TOP 4: Aussprache über das Jahresgutachten 1973 und den Jahreswirtschaftsbericht 1973. – TOP 5: 1. Beratung CDU/CSU-Entwurf Änderung Einkommensteuergesetz.</item>
+					<item xml:id="spd-07_1973-03-13-t1514_WN_SVP-4" corresp="#spd-07_1973-03-13-t1514_WN_div_SVP-4">D. Sonstiges: TOP 7: Vorschlag für die Benennung der Mitglieder der Enquete-Kommission Auswärtige Kulturpolitik. – TOP 8: IPU-Delegation vom 23. bis 29. April 1973. – TOP 9: NATO-Parlamentarierkonferenz. – TOP 10: Zeitliche Disposition 1. Lesung Haushalt 1973. – TOP 11: Flankierende sozialpolitische Maßnahmen zu Paragraph 218 StGB. – TOP 13: Wahl der Delegierten zum Bundesparteitag. – Spendenaktion der Fraktion für Vietnam. – TOP 14: Nächste Termine.</item>
+				</list>
+			</div>
+		</front>
+		<body>
+			<div type="SVP" xml:id="spd-07_1973-03-13-t1514_WN_div_SVP-1">
+				<head>A.</head>
+				<p>
+					<name type="Person" role="Sprecher" ref="#WehnerHerbert_1949-09-07">Wehner</name>: Die Sitzung ist eröffnet. Vor Eintritt in die Tagesordnung möchte ich Paul <name type="Person" role="Erwaehnung" ref="#KratzPaul_1972-12-13">Kratz</name> Glückwünsche zum Geburtstag aussprechen</p>
+				<p>
+					<incident>
+						<desc resp="#JuengerkesSven">(Beifall.)</desc>
+					</incident>
+				</p>
+				<p>und die Blumen des Tages übergeben. Schimpf nicht auf den Übergeber der Blumen. Er übergibt sie nur.</p>
+				<p>Zur Tagesordnung wird das Wort nicht gewünscht? Dann ruf’ ich auf Punkt 1 und bitte Helmut <name type="Person" role="Erwaehnung" ref="#SchmidtHelmut_1953-10-06">Schmidt</name>, zu seinem Bericht das Wort zu nehmen.</p>
+				<p>
+					<name type="Person" role="Sprecher" ref="#SchmidtHelmut_1953-10-06">Schmidt</name> (Hamburg): Liebe Freunde, ich bin mir nicht ganz darüber klar, wie weit der Einzelne aus der Zeitungsberichterstattung von heute Morgen sich ein klares Bild gemacht hat von dem, <seg type="note">was tatsächlich beschlossen wurde und davon, wie es politisch zu bewerten sei. Deswegen bitte ich um Nachsicht, wenn ich zunächst einmal skizziere die wichtigsten Beschlüsse, die in der Nacht von Sonntag auf Montag in Brüssel getroffen worden sind.<note xml:id="spd-07_1973-03-13-t1514_WN_FN001" type="comment">
+							<p>Bereits am 4. März 1973 trafen sich die Finanzminister und Notenbankchefs der EG zu einer Sondersitzung des Rats, um über Maßnahmen gegen die internationale Währungskrise zu beraten, die sich durch die Abwertung des Dollars verschärft hatte. Für die Bundesrepublik bedeutete die anhaltende Dollarschwäche einen fortgesetzten Aufwertungsdruck, da immer mehr Dollar in die DM-Zone flossen. Die Bundesbank war daher gezwungen, immer häufiger am Devisenmarkt zu intervenieren, um die DM innerhalb der im Europäischen Wechselkursverbund vereinbarten Schwankungsbreite von 2,25 Prozent zu halten. In der Sitzung vom 11. auf den 12. März einigten sich die Finanzminister und Notenbankchefs schließlich auf gemeinsame Maßnahmen zur Überwindung der Währungskrise. Zur Erklärung des Rates der Europäischen Gemeinschaften vom 12. März 1973 über Maßnahmen zur Bewältigung der Währungskrise vgl. <name type="Organisation" ref="#EurArchiv">Europa-Archiv </name>1973, D177. – Die D-Mark wurde am 14. März 1973 um drei Prozent aufgewertet.</p>
+						</note></seg> Erstens: Die französische Regierung für den französischen Franc, die anderen Regierungen für den belgischen, luxemburgischen Franc, für den holländischen Gulden, für die deutsche Mark und für die Dänenkrone, haben beschlossen, nach festgelegten Regeln des gegenseitigen Währungsbeistandes dafür zu sorgen, dass die Wechselkurse ihrer Währungen untereinander fest bleiben oder genau und technisch gesprochen, dass sie sich nicht mehr als 2 ¼ Prozent voneinander entfernen dürften. Das heißt dass die bisher geltenden Regeln, die für diese Länder innerhalb der EWG gegolten haben, weiterhin gelten sollen und dass sie zweitens dadurch gegen den Ansturm des immer weicher werdenden US-Dollars verteidigt werden, dass diese sechs Regierungen gemeinsam beschlossen haben, ihre Notenbanken von der Pflicht zu entbinden, an dem unteren Interventionspunkt für den Dollar zu intervenieren, das heißt Dollars zu kaufen. Von der Pflicht entbinden werden – nicht von dem Recht, solches möglicherweise zu tun.</p>
+				<p>Dritter Punkt: Auf Drängen aller Übrigen ist beschlossen worden, die bestehenden Kapitalverkehrskontrollen, die insbesondere ja zur Abschirmung gegen kurzfristige Geldbewegungen eingeführt worden sind, noch zu verstärken und gegebenenfalls beizubehalten. Die Bundesregierung hat im Augenblick nicht die Absicht, aus diesem Beschluss konkrete Konsequenzen zu ziehen. Ich erwähne ihn aber, um darzutun, dass entgegen einer in unserer deutschen Publizistik weit verbreiteten Meinung, <seg type="note">die Kapitalverkehrskontrollen nach Paragraph 23<note xml:id="spd-07_1973-03-13-t1514_WN_FN002" type="comment">
+							<p>Paragraph 23 des Außenwirtschaftsgesetzes regelte die Möglichkeiten zur Beschränkung von Geldgeschäften zwischen »Gebietsansässigen und Gebietsfremden«. <bibl type="bgbl">Zum »Außenwirtschaftsgesetz« in der Fassung vom 28. April 1961 vgl. BGBl. 1961, I, Nr. 29, S. 481-495</bibl>.</p>
+						</note></seg> etwa oder <seg type="note">Bardepotgesetz<note xml:id="spd-07_1973-03-13-t1514_WN_FN003" type="comment">
+							<p>
+								<bibl type="bgbl">Zum »Gesetz zur Änderung des Kapitalverkehrssteuergesetzes und anderer Gesetze (Bardepotgesetz)« in der Fassung vom 23. Dezember 1971 vgl. BGBl. 1971, I, Nr. 135, S. 2134-2136</bibl>.</p>
+						</note></seg> würden der europäischen Integration schaden, dass entgegen dieser Meinung alle übrigen europäischen Regierungen der Meinung sind, wir Deutschen hätten eher noch zu wenig solcherart dirigistischer Schleusen eingeführt.</p>
+				<p>Es war nicht möglich, <seg type="note">die britische, die irische und die italienische Regierung davon zu überzeugen, dass es wünschenswert wäre, wenn sie mit ihren Währungen sich in dasselbe Boot begäben. Wozu man ja wissen muss, dass diese drei Währungen schon vorher frei gefloatet hatten.<note xml:id="spd-07_1973-03-13-t1514_WN_FN004" type="comment">
+							<p>Am 23. Juni 1972 verließen Großbritannien und Irland den Europäischen Wechselkursverbund, nachdem das britische Pfund wegen der anhaltenden Inflation und dem wachsenden Zahlungsbilanzdefizit unter Druck geraten war. Im Februar 1973 schied dann auch Italien aus dem Wechselkursverbund aus.</p>
+						</note></seg> Die Gruppe der sechs hat eine ständige Einladung ausgesprochen an diese drei Regierungen, jederzeit der Vereinbarung beitreten zu können, und sie hat zu diesem Zweck eine Reihe von Vorschlägen durch die Kommission entgegengenommen, eine Arbeit in Gang gesetzt, die darauf hinausläuft, zu dem Zeitpunkt, wo etwa diese drei anderen Währungen der Vereinbarung beitreten wollen, dann allerdings die Regeln des gegenseitigen Währungsbeistandes wesentlich auszuweiten und auch die Zusammenlegung von Währungsreserven im sogenannten Europäischen Fond für währungspolitische Zusammenarbeit einzuleiten. Das wäre dann auch deswegen notwendig, weil die drei Währungen, um die es sich hier handelt, das englische Pfund, die italienische Lira und das irische Pfund, abwertungsverdächtige schwache Währungen sind, die einer außerordentlichen Stützung durch die Starken bedürfen würden, wenn sie sich in das gemeinsame Boot begäben.</p>
+				<p>Für die Ablehnung der englischen Regierung ist besonders maßgeblich, und das sage ich hier mit der Bitte, diesen Teil meines Berichtes nicht zu drucken, ist besonders maßgebend die Tatsache, dass Staatsbürger dritter Staaten, sagen wir Australien, Indien, Neuseeland, frühere englische Kolonien in Afrika und dergleichen, in hohem Maße Sterling-Guthaben in London besitzen, wenn wir sie zu D-Mark rechnen würden, handelt es sich um Beträge zwischen 30 und 40 Milliarden D-Mark, die möglicherweise beunruhigt werden würden durch ein Einscheren, ein Wiedereinscheren des englischen Pfundes in die <seg type="note">sogenannte Schlange<note xml:id="spd-07_1973-03-13-t1514_WN_FN005" type="comment">
+							<p>Gemeint ist der Europäische Wechselkursverbund. Innerhalb des Verbunds sollten sich die Wechselkurse der Mitgliedswährungen zueinander nur innerhalb einer Bandbreite von plus oder minus 2,25 Prozent (wie eine »Schlange«) um die vereinbarten Referenzkurse bewegen.</p>
+						</note></seg>, in die Gruppe, da hat ja das englische Pfund mal acht Wochen sich drin befunden im vorigen Frühjahr, die möglicherweise beunruhigt würden und dann, wahrscheinlich, dazu führen würden, dass diese Pfunde im Gegenwert von 30 oder 40 Milliarden zu einem erheblichen Teil in Frankfurt anmarschiert kommen würden, in D-Mark umzutauschen wären mit der doppelten Konsequenz, mit der doppelten unerfreulichen Konsequenz, dass einerseits wir dafür zusätzliche D-Mark-Liquidität zunächst zu schaffen hätten, die anschließend über Mindestreserven und dergleichen versuchen würden, sie wieder zu eliminieren, und der zweiten Konsequenz, dass natürlich die Londoner City und ganz England uns das bitter übel nehmen würde, wenn wir diesen letzten Rest an Reservewährungsposition, den das Pfund darstellt, auf die D-Mark vereinnahmen würden. Dies ist der Hauptgrund gewesen für die englische Regierung, trotz der sehr weitgehenden Angebote, die wir gemacht haben, und wir sind am weitesten gegangen gegenüber allen. Wir haben vorgeschlagen eine gemeinsame europäische, sprich EWG-Wechselkursgarantie für diese Pfund-Sterling-Guthaben in London, der Grund gewesen, weswegen sie das gleichwohl abgelehnt haben.</p>
+				<p>Wir haben dann in dieser Sitzung bekanntgegeben, dass wir die Absicht hätten, autonom die Parität der Deutsch-Mark um drei Prozent anzuheben. Ich will hier in Klammern dazu fügen, dass wir dieses ohnehin sonst im Laufe des späteren Sommers so oder vielleicht dann sogar möglichweise in größerem Ausmaß hätten tun müssen aus zwei Gründen. Zum einen weil die Auftragseingänge uns zeigen, aus dem Ausland uns zeigen, dass im Lauf des Jahres 1973 der deutsche Aushandelsüberschuss gewaltig steigen und auch zu einem erheblichen Zahlungsbilanzüberschuss führen würde, und zweitens, weil es darauf ankommen muss, die Gewinnexplosion, die hier entstehen könnte, in den Exportindustrien zu beschränken. Wir haben diese dreiprozentige Aufwertung im Ministerrat angekündigt. Das ist das erste Mal, dass die Bundesrepublik Deutschland so etwas nur nach Absprache mit ihren Partnern im Ministerrat der EWG tut.</p>
+				<p>Ich will nun zu den Nebenabreden kommen. Die Nebenabreden bestehen darin, dass man bereit ist, solche europäischen Währungen, die dem beizutreten wünschen, auch tatsächlich beitreten zu lassen. Theoretisch wäre dies denkbar für die Schweiz, für Österreich, für Schweden, für Norwegen, für Finnland. Bisher hat die schwedische Regierung schon zu erkennen gegeben, dass sie auf jeden Fall beitreten wolle. Ich nehme das auch von der österreichischen Regierung an. Es bleibt aber im Augenblick während dieser Woche, die Börsen bleiben ja geschlossen bis nächsten Montag überall auf der Welt, auch in Tokio, es bleibt in dieser Woche noch auszuarbeiten, ob die Währungen, die beizutreten wünschen, auch einbezogen werden wollen in einen danebenzustellenden Mechanismus gegenseitigen Währungsbeistandes oder in einen Mechanismus gegenseitigen Währungsbeistandes von geringerem Volumen oder ob sie, wie ich das für die Schweiz annehmen möchte, zunächst autonom floaten, aber mit dem Ziel, mit ihren eigenen währungspolitischen Reserven dafür zu sorgen, dass sie innerhalb der Bandbreite hineingelangen und innerhalb ihrer bleiben. Eine der Voraussetzungen für dieses ganze Paket von Maßnahmen war die <seg type="note">Abstimmung mit der Regierung der Vereinigten Staaten von Amerika, die zwei Tage zuvor in Paris stattgefunden hatte.<note xml:id="spd-07_1973-03-13-t1514_WN_FN006" type="comment">
+							<p>Gemeint ist die Konferenz der Länder der Zehnergruppe und der Europäischen Gemeinschaft über Währungsfragen am 9. März 1973 in Paris. Zum Kommuniqué der Konferenz vgl. <name type="Organisation" ref="#EurArchiv">Europa-Archiv</name> 1973, D.176f.</p>
+						</note></seg>
+				</p>
+				<p>Die Vereinigten Staaten begrüßen diese europäische Lösung, weil sie sich nicht in der Lage sahen, ihrerseits an einer allseitigen massiven Intervention zur Stützung des Dollarkurses teilzunehmen. Das muss man wissen. Im Übrigen ist der amerikanische Finanzminister wieder auf dem Wege nach Bonn, und wir werden gemeinsam am Freitag uns mit den übrigen Mitgliedern des Zehnerklubs wiederum treffen, also auch die Schweden, die Japaner, die Kanadier dabei, um, wie ich hoffe, bei dieser Gelegenheit dann auch einige zusätzliche kooperative Hilfsmaßnahmen der Vereinigten Staaten zur Beruhigung der Märkte beschließen zu können.</p>
+				<p>Was nun die Bewertung dieses Vorgangs angeht, so muss man zunächst sagen, dass hiermit das Weltwährungssystem, <seg type="note">das 1944 in Bretton Woods begründet wurde<note xml:id="spd-07_1973-03-13-t1514_WN_FN007" type="comment">
+							<p>Auf der Währungs- und Finanzkonferenz im US-amerikanischen Bretton Woods (New Hampshire) beschlossen 44 Staaten im Jahr 1944 die Gründung des Internationalen Währungsfonds und legten Grundzüge einer internationalen Währungspolitik fest, die auf der Golddeckung des US-Dollars und einem System fester Wechselkurse zwischen den Währungen basierte.</p>
+						</note></seg>, endgültig zusammengebrochen ist. <seg type="note">Ein erster ganz wesentlicher Schritt bei diesem Zusammenbruch in mehreren Stufen war im August 1971 die Aufgabe der Konvertibilität des Dollars.<note xml:id="spd-07_1973-03-13-t1514_WN_FN008" type="comment">
+							<p>US-Präsident <name type="Person" role="Erwaehnung" ref="#NixonRichard">Nixon</name> kündigte am 15. August 1971 an, das System fester Wechselkurse (Bretton-Woods-System) einseitig aufzuweichen und den Dollar von nun an frei floaten zu lassen. Zudem kündigte er das Ende der Dollar-Konvertibilität in Gold an. – Zu diesem sog. <name type="Person" role="Erwaehnung" ref="#NixonRichard">Nixon</name>-Schock in der Währungspolitik (der Schock bezog sich zudem noch auf die unerwartete Aufnahme diplomatischer Beziehungen zur Volksrepublik China) vgl. die <ref type="internal" target="#spd-06_1972-01-18-t1515_WN">SPD-Fraktionssitzung am 18. Januar 1972, Anm. 55, online</ref>.</p>
+						</note></seg> Jetzt sind wir in einer Phase angelangt, wo keine der wichtigen Währungen der Welt gegenüber einer der anderen wichtigen Währungen der Welt in einem festen Wechselkursverhältnis sich mehr befindet. Der Yen floatet. Das Pfund floatet. Die Lira floatet. Eine Gruppe von sechs europäischen Währungen, denen sich wahrscheinlich, wie gesagt, Schweden, Schweiz auf die eine, andere Weise anschließen werden, floatet gemeinsam und das heißt auch, der Dollar hat keinen festen Kurs.</p>
+				<p>In diesem System, in dem alle wichtigen Währungen auf der Welt sich frei bewegen, gibt es eine für uns sehr wichtige Ausnahme. Das ist diese europäische Gruppe von Währungen, die untereinander ein festes Wechselkursverhältnis beibehalten. Was übrigens bedeutet, dass zum Beispiel rund 50 Prozent des deutschen Außenhandels in Zukunft zu festen Wechselkursen weiterhin abgewickelt werden wird, während umgekehrt für Japan oder für England gilt, dass 100 Prozent ihres Außenhandels zu Floatingkursen mit all den Risiken, die das bedeutet, und all den Handelshemmnissen, die das bedeutet, abgewickelt werden muss. Für Frankreich, für Holland sieht es ähnlich günstig aus wie für die Bundesrepublik. Dieser Zustand des allgemeinen Freischwimmenlassens der wichtigsten Währungen der Welt ist von keiner Regierung, die hier beteiligt ist, bewusst und intentional herbeigeführt worden im Lauf der letzten zwei Jahre, aber es bleibt der einzig mögliche Ausweg, der, wie ich vermute, erst dann halbwegs mit dauerhafter Aussicht auf Erfolg verlassen werden kann, wenn es inzwischen kommen sollte zu dem, was in den Zeitungen mit der Überschrift versehen wird »Reform des Weltwährungssystems«. Die Reform des Weltwährungssystems trifft auf eine Reihe von Interessengegensätzen, zum Beispiel zwischen Industrieländern und Entwicklungsländern, zum Beispiel zwischen den Vereinigten Staaten auf der einen Seite und allen anderen auf der andern Seite. Ich will das Letztere erläutern. Es gibt, wie man schätzt, eine Masse von 80 Milliarden mehr oder minder liquiden Dollars, die in der Welt rumschwimmen. Solange diese riesenhafte Menge von amerikanischen Dollarforderungen, in unseren Zeitungen häufig auch als Eurodollars bezeichnet, nicht auf irgendeine Weise konsolidiert wird, kann jeden Tag erneut spekulativ ausgelöst das neue Weltwährungssystem wieder in Gefahr gebracht werden.</p>
+				<p>Zweitens: Darüber hinaus befindet sich eine ähnlich große Menge Dollars in den Tresoren, wenn ich mich bildhaft so ausdrücken darf, der Zentralbanken der übrigen Welt als sogenannte Währungsreserve. Zentralbanken vor allen Dingen in der Dritten Welt sind schrittweise dazu übergegangen, diese Währungsreserven auf den Markt zu werfen und dafür D-Mark als Reservewährung zu nehmen. Dies hat Vorteile für uns und auch Nachteile. Die amerikanische Erfahrung besagt, dass es à la longue mehr Nachteile hat als Vorteile. Wir können es im Augenblick bestenfalls als ein Kompliment für unsere Währung nehmen, die eben im Verhältnis zu allen übrigen Währungen der Welt, was wir auch alles an Negativa empfinden mögen über die Preisentwicklung innerhalb unseres Landes, gleichwohl im Verhältnis zu allen übrigen Währungen der Welt gegenwärtig eine der begehrtesten Währungen ist.</p>
+				<p>Was nun die Interessen der EWG angeht in diesem Zusammenhang, so muss man wohl sagen, dass diese Vereinbarung einer Gruppe von sechs EWG-Staaten nicht ein Schritt nach vorne ist im Sinne weiterer monetärer Integration. Das wäre eine übertreibende Behauptung. Ich habe gesehen, dass einer der Finanzminister, der an diesen Verhandlungen beteiligt war, es so ausgedrückt hat. Ich würde so weit nicht gehen, sondern ich würde mich darauf beschränken zu sagen, es handelt sich darum, dass diese sechs Staaten das, was sie an monetärer Integration bisher erreicht hatten seit dem März vorigen Jahres, dass sie dies allerdings nun auch gemeinsam und entschlossen verteidigen und daran nicht knabbern lassen durch diesen weichgewordenen Dollar. Es ist in dem Zusammenhang gewiss bedauerlich, dass Italien nicht beigetreten ist. Ich hätte eigentlich keine unüberwindbaren Schwierigkeiten für Italien gesehen. Was den Nichtbeitritt Englands angeht, trotz der außerordentlich tiefgreifenden politischen Bemühungen, die <seg type="note">der britische Premierminister<note xml:id="spd-07_1973-03-13-t1514_WN_FN009" type="comment">
+							<p>Edward <name type="Person" role="Erwaehnung" ref="#HeathEdward">Heath</name>.</p>
+						</note></seg> und der deutsche Bundeskanzler angestellt haben, so glauben alle Beteiligten der Währungsgespräche der letzten sieben, acht Tage, dass wahrscheinlich doch das Risiko zu groß gewesen wäre, sowohl für die Briten, was mögliche Abflüsse aus dem englischen Pfund angeht, als auch für die Übrigen, insbesondere dabei für Frankreich und uns, die diese Abflüsse hätten finanzieren müssen. Ich glaube also, dass das einstweilige Draußenbleiben Englands im beiderseitigen Interesse das Risiko kalkulierbar gelassen hat. Andererseits wäre es ein sehr hohes Risiko geworden und wir hätten ganz gewiss Währungsreserven zusammenlegen müssen in einen Topf mindestens im Umfang von 30 Milliarden D-Mark.</p>
+				<p>Was das deutsche Interesse angeht, so habe ich schon anklingen lassen, dass die Tatsache, dass gut die Hälfte unseres Außenhandels weiterhin zu festen Kursen abgewickelt werden kann, natürlich in unserem Interesse liegt. Ich habe anklingen lassen, dass die dreiprozentige Aufwertung auch in unserem Interesse liegt, nicht nur wegen der zu erwartenden Einseitigkeit unserer Außenhandelsüberschüsse, sondern auch wegen der Entwicklung der Gewinne in diesem Jahr. Wir sind drittens auch insofern befriedigt, als das Ganze ohne jedwede Konfrontation mit den Vereinigten Staaten von Amerika hat zustande gebracht werden können. Im Gegenteil, wir sind sogar einmal in der angenehmen Lage gewesen, am letzten Freitag erfolgreich eine sich zuspitzende Konfrontation zwischen Amerika und Frankreich applanieren zu können. Ich bitte, diesen Satz nicht aufzunehmen in das, was etwa gedruckt wird.</p>
+				<p>Wir sind uns, glaube ich, auch einig darüber, dass es wünschenswert war, dass drei Wochen vorher der Dollar allgemein abgewertet wurde. Wenn das nicht geschehen wäre vorher, würde jetzt der Aufwertungseffekt für die D-Mark wie für die gemeinsam zusammengeschlossenen sechs europäischen Währungen ein bisschen zu groß geworden sein. Es ist zweifelslos so, dass die amerikanische Regierung wie auch die übrigen Beteiligten vor drei Wochen nicht angenommen haben, dass diese amerikanische Dollarabwertung zusätzlich zu einem quantitativ nicht gerechtfertigten, psychologisch oder sagen wir besser psycho-pathologischen Effekt auf den Devisenmärkten der Welt hätte führen können. Das hat man nicht vorausgesehen. Wir glauben im Augenblick, und das sage ich im Namen aller Mitglieder der Zehnergruppe, einschließlich Japaner, einschließlich Amerikaner und einschließlich des Gastes Schweiz, wir glauben im Augenblick, dass im Grunde die festgesetzten Paritäten und Leitkurse dieser wichtigsten Währungen der Welt zwar ökonomisch richtig festgesetzt sind, dass aber wegen der psychologischen Verfassungen der Märkte möglicherweise Monate, vielleicht sogar eine ganze Menge Monate, vielleicht mehr als ein Jahr darüber hingeht, bis die jetzt im Augenblick frei pendelnden Kurse sich so einspielen, wie die Leitkursrelationen es erstrebt haben.</p>
+				<p>Ich will in dem Zusammenhang deutlich sagen, weil der eine oder andere vielleicht hat irritiert werden können durch ein Interview, <seg type="note">was ich vorige Woche mit Fleiß einer deutschen Wochenzeitung gegeben habe<note xml:id="spd-07_1973-03-13-t1514_WN_FN010" type="comment">
+							<p>Vgl. das Interview »Dämme gegen den Dollar«; »<name type="Organisation" ref="#Zeit">Die Zeit</name>«, Nr. 11 vom 9. März 1973, S. 4.</p>
+						</note></seg>, und auch dafür gesorgt habe, dass es über’n Ticker in ganz Europa lief, da mag er eine oder andere irritiert gewesen sein, weil da drinstand, im Notfall könnten wir leisten, allein zu floaten. Dieses war notwendig, dass es in einigen Hauptstädten so gelesen wurde, hat dazu beigetragen, dass man sich zusammenfinden konnte. Es mussten einige unserer Partner deutlich lesen, dass wir glaubten, es uns auch leisten zu können, alleine das durchzustehen. In dem Zusammenhang verdient nun aber als nächstes Erwähnung die Tatsache, dass das Zusammenspiel mit Frankreich, trotz der noch bevorstehenden Stichwahl in Frankreich<seg type="note"><note xml:id="spd-07_1973-03-13-t1514_WN_FN011" type="comment">
+							<p>Am 11. März 1973 fanden in Frankreich die Stichwahlen nach dem ersten Durchgang der Wahl zur Nationalversammlung am 4. März 1973 statt. Vgl. <name type="Organisation" ref="#EurArchiv">Europa-Archiv </name>1973, Z69.</p>
+						</note></seg>, außerordentlich gut funktioniert hat. Natürlich musste die französische Regierung die bereits Freitagnacht in Paris zustande gebrachten Verabredungen solange trocken halten, das Pulver so lange trocken halten, bis der Wahlvorgang am Stichwahlsonntag abgeschlossen war. In dem Zusammenhang wird wohl auch jeder verstehen, dass aus diesem Grunde, nicht nur aus diesem, auch aus anderen Gründen, wir sehr schweigsam gewesen sind und die ganze Woche keine Informationen gegeben haben, sodass wir in Kauf nehmen mussten, dass in deutschen, aber auch in anderen europäischen Zeitungen zum Teil der blühendste Unsinn stand. Es wird ja nun auch in den Kommentaren noch so weitergehen. Die großen Fachzeitschriften wie »<name type="Organisation" ref="#Spiegel">Spiegel</name>« und »<name type="Organisation" ref="#Welt">Welt</name>« werden das sicherlich fortsetzen.</p>
+				<p>Stabilitätspolitisch wird die Auswirkung von dem Bundeswirtschaftsminister positiv bewertet. Auf mittlere Frist, sagt er, können bei den Werften Schwierigkeiten eintreten. Kurzfristig erfordert dies eine noch stärkere Anstrengung bei der Kohle, wie ich an dem Gesicht von Adolf <name type="Person" role="Erwaehnung" ref="#SchmidtAdolf_1972-12-13">Schmidt</name> mühelos ablesen kann. Das ist klar. Insgesamt wird die Wirtschaft in der Lage sein, das zu verkraften, was ihr zugemutet wird. Was die Landwirtschaft angeht, so besteht die Zusage der Kommission, dass der Grenzausgleich in wenigen Tagen angepasst werden wird. Hier treten also keine Folgen ein – und das bedeutet im Übrigen ja auch, dass der Aufwertungseffekt ein wenig verringert wird. Unter den gegebenen Umständen hält die Bundesregierung die gefundene Verabredung für eine optimale Lösung, eine Lösung, die keine unkalkulierbaren Risiken enthält. Im Gegenteil, es handelt sich um eine relativ homogene Gruppe von Währungen, die schon bisher ohne große Mühe beieinander haben gehalten werden können. Wir wünschen hervorzuheben, dass auch die Kooperation der daran nicht Beteiligten, England, Italien, Irland, Amerika, und die besondere Kooperation mit dem französischen Partner habe ich schon hervorgehoben. Schönen Dank.</p>
+				<p>
+					<incident>
+						<desc resp="#JuengerkesSven">(Beifall.)</desc>
+					</incident>
+				</p>
+				<p>
+					<name type="Person" role="Sprecher" ref="#WehnerHerbert_1949-09-07">Wehner</name>: Wer wünscht das Wort? <name type="Person" role="Erwaehnung" ref="#ReuschenbachPeterW_1972-12-13">Reuschenbach</name>!</p>
+				<p>
+					<name type="Person" role="Sprecher" ref="#ReuschenbachPeterW_1972-12-13">Reuschenbach</name>: Mich würde interessieren, was der Nebensatz konkret bedeuten könnte, dass kurzfristig für die Kohle besondere Anstrengungen nötig sind.</p>
+				<p>
+					<name type="Person" role="Sprecher" ref="#WehnerHerbert_1949-09-07">Wehner</name>: Weitere Fragen oder Bemerkungen? Bitte, <name type="Person" role="Erwaehnung" ref="#OettingHermann_1971-10-19">Oetting</name>.</p>
+				<p>
+					<name type="Person" role="Sprecher" ref="#OettingHermann_1971-10-19">Oetting</name>: Mich würde die Frage interessieren, was es bedeutet, dass die anderen, die beschlossen haben, mit uns zu floaten, gemeinsam mit uns zu floaten, nicht floaten müssen, sondern ihrerseits aufkaufen können Dollar.</p>
+				<p>
+					<name type="Person" role="Sprecher" ref="#WehnerHerbert_1949-09-07">Wehner</name>: Weitere Fragen? Wenn keine weiteren Fragen sind, bitte ich Helmut <name type="Person" role="Erwaehnung" ref="#SchmidtHelmut_1953-10-06">Schmidt</name> zu antworten.</p>
+				<p>
+					<name type="Person" role="Sprecher" ref="#SchmidtHelmut_1953-10-06">Schmidt</name> (Hamburg): Zunächst zu Peter <name type="Person" role="Erwaehnung" ref="#ReuschenbachPeterW_1972-12-13">Reuschenbach</name>. Die Kohle wird ja nicht unmittelbar betroffen, weil wir keine Kohle exportieren, jedenfalls nicht in einem besonderen Maße. Sie wird mittelbar betroffen insofern, als es Verträge gibt, die abgestellt sind auf den Preis der Wettbewerbskohle. Hier handelt es sich um die amerikanische Wettbewerbskohle. Hier ist die Bundesrepublik vertraglich gebunden und wird das Notwendige tun.</p>
+				<p>Was die Frage vom Genossen <name type="Person" role="Erwaehnung" ref="#OettingHermann_1971-10-19">Oetting</name> angeht, da liegt wohl ein Missverständnis zugrunde. Alle in der Sechsergruppe, auch wir haben uns das Recht vorbehalten, Dollars zu kaufen, wenn uns das notwendig erscheinen sollte. Wir haben nicht gesagt, wann wir das tun oder ob wir es überhaupt tun. Wir haben nur gesagt, wir behalten es uns vor. Und zweitens ist ganz klar, dass wenn wir es tun, und das könnten auch die Vereinigten Staaten ja tun mithilfe von Krediten, die wir ihnen geben würden, darüber wird am Freitag in Paris geredet werden, zweitens ist klar, dass wir das alle nur tun würden nach entsprechender Vereinbarung miteinander, die im Augenblick nicht getroffen werden soll, weil wir im Augenblick gar nicht den Eindruck machen wollen, als ob wir den Dollarkurs weiterhin stützen.</p>
+				<p>
+					<name type="Person" role="Sprecher" ref="#WehnerHerbert_1949-09-07">Wehner</name>: Sind noch Fragen? Bitte Antje <name type="Person" role="Erwaehnung" ref="#HuberAntje_1969-10-20">Huber</name>.</p>
+				<p>
+					<name type="Person" role="Sprecher" ref="#HuberAntje_1969-10-20">Huber</name>: Ist damit zu rechnen, dass die Amerikaner, wie es in einigen Zeitungen zu lesen war, auch noch einen besonderen Beitrag zur Situation leisten werden?</p>
+				<p>
+					<name type="Person" role="Sprecher" ref="#WehnerHerbert_1949-09-07">Wehner</name>: Noch Fragen? Bitte!</p>
+				<p>
+					<name type="Person" role="Sprecher" ref="#SanderEngelbert_1969-10-20">Sander</name>: Ich gehe davon aus, dass die Aufwertung nur gegenüber dem US-Dollar erfolgen wird. Das hat aber doch Wirkungen für alle Währungen, die außerhalb der EWG liegen.</p>
+				<p>
+					<name type="Person" role="Sprecher" ref="#WehnerHerbert_1949-09-07">Wehner</name>: Weitere Fragen? Wenn nicht, dann bitte ich Helmut <name type="Person" role="Erwaehnung" ref="#SchmidtHelmut_1953-10-06">Schmidt</name>.</p>
+				<p>
+					<name type="Person" role="Sprecher" ref="#SchmidtHelmut_1953-10-06">Schmidt</name> (Hamburg): Was Antje <name type="Person" role="Erwaehnung" ref="#HuberAntje_1969-10-20">Hubers</name> Frage angeht, ich möchte vorsichtig sein in der Antwort. Dieses bleibt noch auszuhandeln am Donnerstag und Freitag. Wir haben darüber vorbereitende Gespräche mit der amerikanischen Seite gehabt in der letzten Woche. Ich möchte glauben, dass es kooperative Maßnahmen von der amerikanischen Seite geben wird, ohne dass ich sie im Augenblick näher definieren möchte.</p>
+				<p>Was den Genossen <name type="Person" role="Erwaehnung" ref="#SanderEngelbert_1969-10-20">Sander</name> angeht, wir werten auf unsere Parität oder sagen wir genauer unseren Leitkurs in Gold oder in Sonderziehungsrechten. Das überlegen wir im Augenblick noch, was uns zweckmäßiger erscheint. Technisch läuft es auf akkurat dasselbe hinaus. Was uns währungspolitisch zweckmäßiger erscheint, wird im Augenblick in der Gruppe der Stellvertreter des Zehnerblocks noch erwogen. Die Bedeutung einer solchen dreiprozentigen Aufwertung, der Effekt ergibt sich gegenüber allen anderen, nicht nur gegenüber den Mitgliedern der Sechsergruppe, sondern gegenüber allen anderen.</p>
+				<p>
+					<name type="Person" role="Sprecher" ref="#WehnerHerbert_1949-09-07">Wehner</name>: Keine weiteren Fragen?</p>
+			</div>		
+</body>
+	</text>
+</TEI>

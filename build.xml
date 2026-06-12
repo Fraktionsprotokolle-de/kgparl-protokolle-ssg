@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir="." name="tei2html" default="build">
+    <property name="index" value="./data/meta/about.xml"/>
+    <property name="target" value="./html"/>
+    <property name="target_xml" value="./html/downloads"/>
+    <property name="saxon.jar" value="${basedir}/saxon/saxon-pe-12.6.jar"/>
+    <property name="parallel.threads" value="4"/>
+    <property environment="envvar"/>
+    <property name="build.report.dir" value="${basedir}/build/reports"/>
+    <property name="xslt.report" value="${build.report.dir}/xslt-transform.log"/>
+    <property name="xml.valid.editions.dir" value="${basedir}/build/valid-editions"/>
+    <property name="xml.preflight.report" value="${build.report.dir}/xml-preflight.log"/>
+    <property name="xslt.single.failonerror" value="false"/>
+    <property name="xslt.batch.failonerror" value="false"/>
+    <condition property="xslt.report.mail.to" value="${envvar.XSLT_REPORT_MAIL_TO}">
+        <isset property="envvar.XSLT_REPORT_MAIL_TO"/>
+    </condition>
+    <property name="xslt.report.mail.to" value=""/>
+    <property name="xslt.report.mail.command" value="mail"/>
+
+    <!-- Environment-dependent base URL (env is passed via -Denv=test/live) -->
+    <property name="env" value="live"/>
+    <condition property="base_url" value="https://www.edition-bundestagsfraktionen.de">
+        <equals arg1="${env}" arg2="test"/>
+    </condition>
+    <property name="base_url" value="https://www.fraktionsprotokolle.de"/>
+    <property name="xslt.report.mail.subject" value="[KGParl ${env}] XSLT transform errors"/>
+
+    <!-- Macro for single-file XSLT transforms (eliminates Saxon boilerplate) -->
+    <macrodef name="saxon-xslt">
+        <attribute name="in"/>
+        <attribute name="out"/>
+        <attribute name="style"/>
+        <attribute name="force" default="false"/>
+        <sequential>
+            <xslt in="@{in}" out="@{out}" style="@{style}" force="@{force}" failonerror="${xslt.single.failonerror}">
+                <factory name="net.sf.saxon.TransformerFactoryImpl"/>
+<classpath>
+    <fileset dir="${basedir}/saxon">
+        <include name="*.jar"/>
+    </fileset>
+</classpath>
+                <param name="base_url" expression="${base_url}"/>
+            </xslt>
+        </sequential>
+    </macrodef>
+
+    <!-- Macro for batch XSLT transforms (directory of files) -->
+    <macrodef name="saxon-xslt-batch">
+        <attribute name="style"/>
+        <attribute name="srcdir"/>
+        <attribute name="destdir"/>
+        <attribute name="includes"/>
+        <attribute name="excludes" default=""/>
+        <sequential>
+            <xslt style="@{style}" basedir="@{srcdir}" destdir="@{destdir}" includes="@{includes}" excludes="@{excludes}" failonerror="${xslt.batch.failonerror}">
+                <factory name="net.sf.saxon.TransformerFactoryImpl"/>
+<classpath>
+    <fileset dir="${basedir}/saxon">
+        <include name="*.jar"/>
+    </fileset>
+</classpath>
+                <param name="base_url" expression="${base_url}"/>
+            </xslt>
+        </sequential>
+    </macrodef>
+
+    <!-- Clean generated HTML -->
+    <target name="clean">
+        <delete>
+            <fileset dir="${target}" includes="*.html"/>
+        </delete>
+    </target>
+
+    <!-- Build language manifest from html/locales/<code>/translation.json.
+         Schreibt data/meta/languages.xml (für XSLT-Navbar) und
+         html/locales/manifest.json (für i18n.js zur Laufzeit). -->
+    <target name="languages">
+        <exec executable="python3" failonerror="true">
+            <arg value="${basedir}/scripts/generate_languages_manifest.py"/>
+        </exec>
+    </target>
+
+    <target name="prepare-valid-editions">
+        <mkdir dir="${build.report.dir}"/>
+        <exec executable="python3" failonerror="false" resultproperty="xml.preflight.exit">
+            <arg value="${basedir}/scripts/prepare_valid_xml.py"/>
+            <arg value="--source"/>
+            <arg value="${basedir}/data/editions"/>
+            <arg value="--dest"/>
+            <arg value="${xml.valid.editions.dir}"/>
+            <arg value="--report"/>
+            <arg value="${xml.preflight.report}"/>
+            <arg value="--label"/>
+            <arg value="data/editions"/>
+            <arg value="--recursive"/>
+        </exec>
+        <echo message="XML preflight exit code: ${xml.preflight.exit}"/>
+    </target>
+
+    <!-- All XSLT transforms in parallel -->
+    <target name="transform" depends="clean, languages, prepare-valid-editions">
+        <mkdir dir="${build.report.dir}"/>
+        <copy file="${xml.preflight.report}" tofile="${xslt.report}" overwrite="true"/>
+        <record name="${xslt.report}" action="start" append="true" loglevel="info"/>
+        <echo message="XSLT transform report: ${xslt.report}"/>
+        <parallel threadCount="${parallel.threads}">
+            <!-- Single pages from about.xml -->
+            <saxon-xslt in="${index}" out="${target}/index.html"                style="./xslt/index.xsl"/>
+            <saxon-xslt in="${index}" out="${target}/404.html"                  style="./xslt/404.xsl"/>
+            <saxon-xslt in="${index}" out="${target}/kontakt.html"              style="./xslt/kontakt.xsl"/>
+            <saxon-xslt in="${index}" out="${target}/barrierefreiheit.html"     style="./xslt/barrierefreiheit.xsl"/>
+            <saxon-xslt in="${index}" out="${target}/liste.html"                style="./xslt/liste.xsl"/>
+            <saxon-xslt in="${index}" out="${target}/suche.html"                style="./xslt/search.xsl"/>
+            <saxon-xslt in="${index}" out="${target}/kalender.html"             style="./xslt/kalender.xsl"/>
+            <saxon-xslt in="${index}" out="${target}/literaturverzeichnis.html" style="./xslt/listliterature.xsl"/>
+            <saxon-xslt in="${index}" out="${target}/dummy.html"                style="./xslt/statics/markdown.xsl" force="true"/>
+
+            <!-- Einleitungen overview (needs both in and basedir) -->
+            <xslt in="${index}" basedir="./data/einleitungen" destdir="${target}" includes="*.xml"
+                  out="${target}/einleitungen.html" style="./xslt/einleitungen.xsl">
+                <factory name="net.sf.saxon.TransformerFactoryImpl"/>
+<classpath>
+    <fileset dir="${basedir}/saxon">
+        <include name="*.jar"/>
+    </fileset>
+</classpath>
+                <param name="base_url" expression="${base_url}"/>
+            </xslt>
+
+            <!-- Index-based transforms -->
+            <saxon-xslt in="./data/indices/Personen.xml"       out="${target}/beacon_kgparl_gnd.txt"              style="./xslt/beacon.xsl"/>
+            <saxon-xslt in="./data/indices/Personen.xml"       out="${target}/personenregister.html"   style="./xslt/listperson.xsl"/>
+            <saxon-xslt in="./data/indices/Personen.xml"       out="${target}/gnd.html"                style="./xslt/gnd.xsl"/>
+            <!-- <saxon-xslt in="./data/indices/Organisationen.xml" out="${target}/listorg.html"            style="./xslt/listorg.xsl"/>-->
+            <saxon-xslt in="./data/indices/tei-fpv.xml"      out="${target}/schlagwortregister.html" style="./xslt/listkeyword.xsl"/>
+
+            <!-- Batch directory transforms -->
+            <saxon-xslt-batch style="./xslt/editions.xsl" srcdir="${xml.valid.editions.dir}" destdir="${target}" includes="**/*.xml"/>
+            <saxon-xslt-batch style="./xslt/editions.xsl" srcdir="./data/einleitungen" destdir="${target}" includes="*.xml"/>
+            <saxon-xslt-batch style="./xslt/meta.xsl"     srcdir="./data/meta"         destdir="${target}" includes="*.xml" excludes="languages.xml"/>
+
+            <!-- Copy XML source files for download (independent, runs alongside transforms) -->
+            <copy todir="${target_xml}" flatten="true">
+                <fileset dir="./data/">
+                    <include name="**/*.xml"/>
+                </fileset>
+            </copy>
+        </parallel>
+        <record name="${xslt.report}" action="stop"/>
+    </target>
+
+    <!-- Strip XML namespaces from generated HTML -->
+    <target name="post-process" depends="transform">
+        <replace dir="${target}" value="">
+            <include name="*.html"/>
+            <replacetoken> xmlns=""</replacetoken>
+        </replace>
+        <replace dir="${target}" value="">
+            <include name="*.html"/>
+            <replacetoken>xmlns:tei="http://www.tei-c.org/ns/1.0"</replacetoken>
+        </replace>
+        <replace dir="${target}" value="">
+            <include name="*.html"/>
+            <replacetoken>xmlns="http://www.w3.org/1999/xhtml"</replacetoken>
+        </replace>
+    </target>
+
+    <!-- Optional mail notification for batch XSLT errors.
+         Configure with: -Dxslt.report.mail.to="address@example.org,other@example.org" -->
+    <target name="check-xslt-report">
+        <condition property="xslt.report.has.errors">
+            <and>
+                <available file="${xslt.report}"/>
+                <or>
+                    <resourcecontains resource="${xslt.report}" substring="Error!"/>
+                    <resourcecontains resource="${xslt.report}" substring="Failed to process"/>
+                    <resourcecontains resource="${xslt.report}" substring="Caught an error"/>
+                    <resourcecontains resource="${xslt.report}" substring="Fatal error"/>
+                    <resourcecontains resource="${xslt.report}" substring="XTDE"/>
+                    <resourcecontains resource="${xslt.report}" substring="SXXP"/>
+                </or>
+            </and>
+        </condition>
+        <condition property="xslt.report.mail.enabled">
+            <not>
+                <equals arg1="${xslt.report.mail.to}" arg2=""/>
+            </not>
+        </condition>
+        <condition property="xslt.report.mail.should.send">
+            <and>
+                <isset property="xslt.report.has.errors"/>
+                <isset property="xslt.report.mail.enabled"/>
+            </and>
+        </condition>
+        <condition property="xslt.report.mail.skipped.no.recipient">
+            <and>
+                <isset property="xslt.report.has.errors"/>
+                <not>
+                    <isset property="xslt.report.mail.enabled"/>
+                </not>
+            </and>
+        </condition>
+    </target>
+
+    <target name="xslt-report-mail-send" depends="check-xslt-report" if="xslt.report.mail.should.send">
+        <echo message="Sending XSLT error report to ${xslt.report.mail.to}"/>
+        <exec executable="python3" failonerror="false" failifexecutionfails="false">
+            <arg value="${basedir}/scripts/send_report_mail.py"/>
+            <arg value="--command"/>
+            <arg value="${xslt.report.mail.command}"/>
+            <arg value="--subject"/>
+            <arg value="${xslt.report.mail.subject}"/>
+            <arg value="--to"/>
+            <arg value="${xslt.report.mail.to}"/>
+            <arg value="--report"/>
+            <arg value="${xslt.report}"/>
+        </exec>
+    </target>
+
+    <target name="xslt-report-mail-skip" depends="check-xslt-report" if="xslt.report.mail.skipped.no.recipient">
+        <echo message="XSLT errors were logged in ${xslt.report}; set -Dxslt.report.mail.to=address@example.org to send the report by mail."/>
+    </target>
+
+    <target name="mail-xslt-report" depends="xslt-report-mail-send,xslt-report-mail-skip"/>
+
+    <!-- Main build target -->
+    <target name="build" depends="post-process,mail-xslt-report"/>
+</project>

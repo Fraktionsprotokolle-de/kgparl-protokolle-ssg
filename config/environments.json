@@ -1,0 +1,40 @@
+{
+  "live": {
+    "typesense": {
+      "host": "ts.fraktionsprotokolle.de",
+      "port": 443,
+      "protocol": "https",
+      "timeout": 120,
+      "collections": {
+        "protocols": "kgparl",
+        "persons": "kgparl_persons",
+        "literature": "kgparl_literature",
+        "einleitung": "kgparl_einleitung",
+        "keywords": "kgparl_keywords"
+      }
+    },
+    "github": {
+      "repo": "Fraktionsprotokolle-de/fraktionsprotokolle_web",
+      "branch": "main"
+    }
+  },
+  "test": {
+    "typesense": {
+      "host": "ts.fraktionsprotokolle.de",
+      "port": 443,
+      "protocol": "https",
+      "timeout": 120,
+      "collections": {
+        "protocols": "kgparl_test",
+        "persons": "kgparl_persons_test",
+        "literature": "kgparl_literature_test",
+        "einleitung": "kgparl_einleitung_test",
+        "keywords": "kgparl_keywords_test"
+      }
+    },
+    "github": {
+      "repo": "Fraktionsprotokolle-de/Protokolle",
+      "branch": "main"
+    }
+  }
+}

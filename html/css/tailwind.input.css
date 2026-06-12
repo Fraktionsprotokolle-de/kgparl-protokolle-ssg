@@ -1,0 +1,305 @@
+/* ==========================================================================
+   KGParl Tailwind CSS - Input File
+   Tailwind v4 Configuration via CSS
+   ========================================================================== */
+
+@import "tailwindcss";
+
+/* ==========================================================================
+   Theme Configuration (replaces tailwind.config.js in v4)
+   ========================================================================== */
+
+@theme {
+  /* Colors - KGParl Design System */
+  --color-primary: #4d7310;
+  --color-primary-hover: #3d5c0d;
+  --color-primary-light: rgba(77, 115, 16, 0.15);
+  --color-primary-dark: #3d5c0d;
+
+  --color-secondary: #2c3e50;
+  --color-secondary-dark: #1a252f;
+
+  --color-background: #ffffff;
+  --color-background-alt: #f5f5f5;
+  --color-background-dark: #e0e0e0;
+
+  --color-text-default: #333333;
+  --color-text-muted: #666666;
+  --color-text-light: rgba(255, 255, 255, 0.7);
+  --color-text-white: #ffffff;
+
+  --color-border: #e0e0e0;
+  --color-border-light: #f0f0f0;
+
+  /* Entity Colors */
+  --color-person: #4d7c0f;
+  --color-place: #2563eb;
+  --color-org: #7c3aed;
+  --color-date: #666666;
+
+  /* Focus/Highlight */
+  --color-focus: #f6a623;
+  --color-highlight: rgba(246, 166, 35, 0.3);
+
+  /* Fraktion Colors */
+  --color-spd: #dc3545;
+  --color-cdu: #212529;
+  --color-csu: #0d6efd;
+  --color-fdp: #ffc107;
+  --color-gruene: #198754;
+  --color-pds: #d63384;
+
+  /* Typography */
+  --font-family-sans: 'Source Sans 3', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-family-serif: 'Georgia', 'Times New Roman', serif;
+  --font-family-mono: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+
+  /* Container */
+  --container-max-width: 80rem;
+}
+
+/* ==========================================================================
+   Base Layer - Reset & Typography
+   ========================================================================== */
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-family-sans);
+    color: var(--color-text-default);
+    background-color: var(--color-background);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-family-sans);
+    font-weight: 600;
+    color: var(--color-secondary);
+    line-height: 1.25;
+  }
+
+  a {
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: color 200ms ease;
+  }
+
+  a:hover {
+    color: var(--color-primary-hover);
+    text-decoration: underline;
+  }
+
+  *:focus-visible {
+    outline: 2px solid var(--color-focus);
+    outline-offset: 2px;
+  }
+}
+
+/* ==========================================================================
+   Component Layer - Reusable Components
+   ========================================================================== */
+
+@layer components {
+  /* Container */
+  .kgparl-container {
+    width: 100%;
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  @media (min-width: 640px) {
+    .kgparl-container {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .kgparl-container {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+
+  /* Buttons */
+  .kgparl-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    border-radius: 0.375rem;
+    transition: all 200ms ease;
+  }
+
+  .kgparl-btn:focus-visible {
+    outline: 2px solid var(--color-focus);
+    outline-offset: 2px;
+  }
+
+  .kgparl-btn-primary {
+    background-color: var(--color-primary);
+    color: white;
+  }
+
+  .kgparl-btn-primary:hover {
+    background-color: var(--color-primary-hover);
+    text-decoration: none;
+  }
+
+  .kgparl-btn-secondary {
+    background-color: var(--color-secondary);
+    color: white;
+  }
+
+  .kgparl-btn-secondary:hover {
+    background-color: var(--color-secondary-dark);
+    text-decoration: none;
+  }
+
+  .kgparl-btn-outline {
+    border: 2px solid var(--color-primary);
+    color: var(--color-primary);
+    background-color: transparent;
+  }
+
+  .kgparl-btn-outline:hover {
+    background-color: var(--color-primary);
+    color: white;
+    text-decoration: none;
+  }
+
+  /* Links */
+  .kgparl-link {
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: color 200ms ease;
+  }
+
+  .kgparl-link:hover {
+    color: var(--color-primary-hover);
+    text-decoration: underline;
+  }
+
+  /* Cards */
+  .kgparl-card {
+    background-color: white;
+    border-radius: 0.5rem;
+    border: 1px solid var(--color-border);
+    padding: 1.5rem;
+    transition: box-shadow 200ms ease;
+  }
+
+  .kgparl-card:hover {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+
+  /* Tables */
+  .kgparl-table {
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+  }
+
+  .kgparl-table th {
+    padding: 0.75rem 1rem;
+    font-weight: 600;
+    font-size: 0.875rem;
+    background-color: var(--color-background-alt);
+    color: var(--color-secondary);
+    border-bottom: 2px solid var(--color-border);
+  }
+
+  .kgparl-table td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .kgparl-table tbody tr:hover {
+    background-color: var(--color-background-alt);
+  }
+
+  /* Badges */
+  .kgparl-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.125rem 0.625rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 500;
+  }
+
+  .kgparl-badge-primary {
+    background-color: var(--color-primary);
+    color: white;
+  }
+
+  .kgparl-badge-secondary {
+    background-color: var(--color-secondary);
+    color: white;
+  }
+
+  /* Form Inputs */
+  .kgparl-input {
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.375rem;
+    border: 1px solid var(--color-border);
+    font-size: 1rem;
+    transition: border-color 200ms ease, box-shadow 200ms ease;
+  }
+
+  .kgparl-input:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px var(--color-primary-light);
+  }
+
+  /* Screen Reader Only */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+}
+
+/* ==========================================================================
+   Utilities Layer - Custom Utilities
+   ========================================================================== */
+
+@layer utilities {
+  /* Text colors using theme */
+  .text-primary { color: var(--color-primary); }
+  .text-secondary { color: var(--color-secondary); }
+  .text-muted { color: var(--color-text-muted); }
+
+  /* Background colors using theme */
+  .bg-primary { background-color: var(--color-primary); }
+  .bg-secondary { background-color: var(--color-secondary); }
+  .bg-alt { background-color: var(--color-background-alt); }
+
+  /* Border colors using theme */
+  .border-primary { border-color: var(--color-primary); }
+  .border-default { border-color: var(--color-border); }
+
+  /* Fraktion badge colors */
+  .bg-spd { background-color: var(--color-spd); }
+  .bg-cdu { background-color: var(--color-cdu); }
+  .bg-csu { background-color: var(--color-csu); }
+  .bg-fdp { background-color: var(--color-fdp); }
+  .bg-gruene { background-color: var(--color-gruene); }
+  .bg-pds { background-color: var(--color-pds); }
+}

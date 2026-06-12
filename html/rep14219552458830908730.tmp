@@ -1,0 +1,812 @@
+<!DOCTYPE HTML>
+<html xmlns:fn="http://www.w3.org/2005/xpath-functions" class="h-100">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta  http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta  name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta  name="mobile-web-app-capable" content="yes">
+      <meta  name="apple-mobile-web-app-capable" content="yes">
+      <meta  name="apple-mobile-web-app-title" content="Fraktionssitzung (Kurzprotokoll)">
+      <meta  name="msapplication-TileColor" content="#ffffff">
+      <meta  name="msapplication-TileImage" content="images/logo.png">
+      <link  rel="icon" type="image/svg+xml" href="images/logo.png" sizes="any">
+      <link  rel="profile" href="http://gmpg.org/xfn/11">
+      <title >Fraktionssitzung (Kurzprotokoll)</title>
+      <link  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/oswald@5.1.0/index.min.css">
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/roboto-font@0.1.0/css/fonts.min.css">
+      <link  rel="stylesheet" href="css/style.css" type="text/css">
+      <link  rel="stylesheet" href="css/micro-editor.css" type="text/css"><script  src="https://cdn.jsdelivr.net/npm/i18next@21.6.10/i18next.min.js"></script><script  src="https://cdn.jsdelivr.net/npm/jquery-i18next@1.2.1/jquery-i18next.min.js"></script><script  src="https://cdn.jsdelivr.net/npm/i18next-browser-languagedetector@6.1.3/i18nextBrowserLanguageDetector.min.js"></script><script  src="https://cdn.jsdelivr.net/npm/i18next-http-backend@1.3.2/i18nextHttpBackend.min.js"></script><style>
+                    .navBarNavDropdown ul li:nth-child(2) {
+                    display: none !important;
+                    }
+                    .highlight {
+                    background-color: rgb(246, 166, 35);
+                    }
+                </style>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/antd/5.20.5/reset.min.css" integrity="sha512-vw1Eh0YXwSfFcRPIxtAvonjwHTEqKqwq7ucziF/ZCMEzRlmECgzmGSIHecwetYQXMUE1AL4mlxI7OCt38WvOgw==" crossorigin="anonymous" referrerpolicy="no-referrer"><script type="module" src="js/popupinfo.js"></script><script type="module" src="js/customcheckbox.js"></script></head>
+   <body class="d-flex flex-column h-100 relative">
+      <header >
+         <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid"><a class="navbar-brand" href="index.html" data-i18n="navbar__home"></a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                     <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="navbar__project"></a><ul class="dropdown-menu">
+                           <li><a class="dropdown-item" href="about.html" data-i18n="navbar__about"></a></li>
+                           <li><a class="dropdown-item" href="imprint.html" data-i18n="navbar__imprint"></a></li>
+                        </ul>
+                     </li>
+                     <li class="nav-item"><a class="nav-link" href="liste.html" data-i18n="navbar__nofacs"></a></li>
+                     <li class="nav-item dropdown disabled"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-i18n="navbar__register"></a><ul class="dropdown-menu">
+                           <li><a class="dropdown-item" href="listperson.html" data-i18n="navbar__persons"></a></li>
+                           <li><a class="dropdown-item" href="listplace.html" data-i18n="navbar__places"></a></li>
+                           <li><a class="dropdown-item" href="listorg.html" data-i18n="navbar__orgs"></a></li>
+                           <li><a class="dropdown-item" href="listbibl.html" data-i18n="navbar__works"></a></li>
+                        </ul>
+                     </li>
+                     <li class="nav-item"><a title="Suche" class="nav-link" href="search.html" data-i18n="navbar__search"></a></li><select name="language" id="languageSwitcher"></select></ul>
+               </div>
+            </div>
+         </nav>
+      </header>
+      <div class="breadcrumbs text-center "><a href="index.html" class="kgparl-link" target="_blank" title="Zurück zur Startseite">SPD</a> / <a href="index.html" class="kgparl-link" target="_blank" title="Zurück zur Startseite">05</a> / 19.04.1966 / Fraktionssitzung (Kurzprotokoll)</div>
+      <hr>
+      <main class="flex-shrink-0">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-2 col-lg-2 col-sm-12"></div>
+               <div class="col-md-8 col-lg-8 col-sm-12">
+                  <h1 align="center" class="d-none">Fraktionssitzung (Kurzprotokoll)</h1>
+                  <h3 align="center"><a href="spd-05_1966-04-19-t1515_EP.xml" target="_blank"><i class="bi bi-download" title="TEI/XML"></i></a></h3>
+               </div>
+               <div class="col-md-2 col-lg-2 col-sm-12" style="text-align:right"></div>
+               <div id="editor-widget" class="d-none">
+                  <div id="aot-navBarNavDropdown" class="navBarNavDropdown dropstart"><a title="Annotationen" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" role="button"><i class="bi bi-gear" title="Menü zur Anpassung der Anzeige"></i></a><ul class="dropdown-menu">
+                        <li class="dropdown-item">
+                           <full-size opt="fls"></full-size>
+                        </li>
+                        <li class="dropdown-item">
+                           <image-switch opt="es"></image-switch>
+                        </li>
+                        <li class="dropdown-item">
+                           <font-size opt="fs"></font-size>
+                        </li>
+                        <li class="dropdown-item">
+                           <font-family opt="ff"></font-family>
+                        </li>
+                        <li class="dropdown-item" style="border-top: 5px dashed lightgrey !important;">
+                           <annotation-slider opt="ef"></annotation-slider>
+                        </li>
+                        <li class="dropdown-item">
+                           <annotation-slider opt="prs"></annotation-slider>
+                        </li>
+                        <li class="dropdown-item">
+                           <annotation-slider opt="plc"></annotation-slider>
+                        </li>
+                        <li class="dropdown-item">
+                           <annotation-slider opt="wrk"></annotation-slider>
+                        </li>
+                        <li class="dropdown-item">
+                           <annotation-slider opt="org"></annotation-slider>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="heading">
+               <h2>SPD (05.
+                  WP)</h2>
+               <details>
+                  <summary>
+                     <h3>19.04.1966: Fraktionssitzung (Kurzprotokoll)<sup title="Informationen und Zitierempfehlungen ein-/ausklappen">
+                           ⓘ</sup></h3>
+                  </summary>
+                  <div xmlns:local="http://dse-static.foo.bar"  xmlns:xs="http://www.w3.org/2001/XMLSchema" class="d-block overflow-hidden px-2 info lead d-inline"><strong>Vorlage: </strong>Archiv der sozialen Demokratie (AdsD), SPD-BT-Fraktion 5. WP, Ord. 8.3.1966 – 28.6.1966 (alt 1039, neu 20). Zeitgenössisches maschinenschriftliches Typoskript.<br><strong>Titel der
+                        Archivalie: </strong> »SPD-Fraktion im Bundestag. Bonn, den 20.4.1966. Protokoll der SPD-Fraktionssitzung
+                     vom 19. April 1966«. <br><strong>Umfang: </strong>7 Seiten. <br><strong>Beginn: </strong>15:15 Uhr. <strong>
+                        Sitzungsvorsitz: </strong>Fritz Erler. <strong>Ort: </strong>Bonn.<br><strong>Protokolltyp: </strong>Verlauf-/Ergebnisprotokoll.<br><br><strong>Ediert durch: </strong><p class="lead d-inline">Bettina Tüffers.</p><br><strong>Zitationsvorschlag: </strong><p class="lead d-inline">SPD, 05. WP, Fraktionssitzung (Kurzprotokoll) am 19.04.1966 bearb. v. Bettina Tüffers. In: Editionsprogramm »Fraktionen im Deutschen Bundestag
+                        1949–2005«, online. https://www.fraktionsprotokolle.de/spd-05_1966-04-19-t1515_EP.xml (abgerufen am 21.10.2024). </p>
+                  </div>
+               </details>
+               <details id="sitzungsverlauf">
+                  <summary>
+                     <h3>Sitzungsverlauf:<sup title="Sitzungsverlauf ein-/ausklappen">
+                           ⓘ</sup></h3>
+                  </summary>
+               </details>
+               <div id="hamburger-menu" class="hidden">
+                  <div class="hamburger-icon"><span></span><span></span><span></span></div>
+                  <nav class="menu-items"><a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#contact">Contact</a></nav>
+               </div>
+            </div><br><body xmlns="http://www.tei-c.org/ns/1.0">
+               			
+               <div xmlns:local="http://dse-static.foo.bar"  xmlns:xs="http://www.w3.org/2001/XMLSchema">
+                  				
+                  <p>Vorsitz: Fritz <span class="fst-italic d-inline-block" aria-haspopup="true" id="#ErlerFritz_1949-09-07">
+                        <popup-info data-html="true" data-title="Fritz Erler" data-content="<a class='kgparl-link' href='ErlerFritz_1949-09-07.html'&gt;Weitere Daten</a&gt;">Erler</popup-info></span>
+                     				</p>
+                  				
+                  <p>Fritz <span class="fw-bold" id="#ErlerFritz_1949-09-07" aria-haspopup="true"><span slot="content"></span><popup-info data-html="true" data-title="Fritz Erler" data-content="<a class='kgparl-link' href='ErlerFritz_1949-09-07.html'&gt;Weitere Daten</a&gt;">Erler</popup-info></span> eröffnet die Fraktionssitzung um 15.15 Uhr.</p>
+                  				
+                  <p>Punkt 1 der Tagesordnung: Politischer Bericht von Fritz <span class="fst-italic d-inline-block" aria-haspopup="true" id="#ErlerFritz_1949-09-07">
+                        <popup-info data-html="true" data-title="Fritz Erler" data-content="<a class='kgparl-link' href='ErlerFritz_1949-09-07.html'&gt;Weitere Daten</a&gt;">Erler</popup-info></span>.</p>
+                  				
+                  <p>Fritz <span class="fw-bold" id="#ErlerFritz_1949-09-07" aria-haspopup="true"><span slot="content"></span><popup-info data-html="true" data-title="Fritz Erler" data-content="<a class='kgparl-link' href='ErlerFritz_1949-09-07.html'&gt;Weitere Daten</a&gt;">Erler</popup-info></span> spricht zunächst Glückwünsche an die Hamburger SPD anläßlich ihres Wahlerfolges bei
+                     den Bürgerschaftswahlen aus.<span class="text-decoration-none text-start seg-note"><a href="#fn1" class="seg-note-link kgparl-link" rel="footnote">1</a></span>
+                     				</p>
+                  				
+                  <p>Sodann geht Fritz <span class="fst-italic d-inline-block" aria-haspopup="true" id="#ErlerFritz_1949-09-07">
+                        <popup-info data-html="true" data-title="Fritz Erler" data-content="<a class='kgparl-link' href='ErlerFritz_1949-09-07.html'&gt;Weitere Daten</a&gt;">Erler</popup-info></span> auf den »Offenen Briefwechsel« zwischen SED und SPD ein.<span class="text-decoration-none text-start seg-note"><a href="#fn2" class="seg-note-link kgparl-link" rel="footnote">2</a></span> Er schildert das Zustandekommen des Vorschlags des SPD-Parteivorstandes, als Redner
+                     für die geplanten Veranstaltungen in Chemnitz und Hannover den Parteivorsitzenden
+                     Willy <span class="fst-italic d-inline-block" aria-haspopup="true" id="#BrandtWilly_1949-09-07">
+                        <popup-info data-html="true" data-title="Willy Brandt" data-content="<a class='kgparl-link' href='BrandtWilly_1949-09-07.html'&gt;Weitere Daten</a&gt;">Brandt</popup-info></span> und seine beiden Stellvertreter Fritz <span class="fst-italic d-inline-block" aria-haspopup="true" id="#ErlerFritz_1949-09-07">
+                        <popup-info data-html="true" data-title="Fritz Erler" data-content="<a class='kgparl-link' href='ErlerFritz_1949-09-07.html'&gt;Weitere Daten</a&gt;">Erler</popup-info></span> und Herbert <span class="fst-italic d-inline-block" aria-haspopup="true" id="#WehnerHerbert_1949-09-07">
+                        <popup-info data-html="true" data-title="Herbert Wehner" data-content="<a class='kgparl-link' href='WehnerHerbert_1949-09-07.html'&gt;Weitere Daten</a&gt;">Wehner</popup-info></span> zu benennen:<span class="text-decoration-none text-start seg-note"><a href="#fn3" class="seg-note-link kgparl-link" rel="footnote">3</a></span> Der Parteivorstand wollte bei der personellen Auswahl »keine kleinen Brötchen backen«.
+                     Deshalb habe er die drei für die SPD repräsentativen Männer dafür ausgewählt, in Chemnitz
+                     die Politik der SPD zu vertreten; in Kreisen der CDU/CSU haben sich einige Leute darüber
+                     aufgeregt, daß mit Willy <span class="fst-italic d-inline-block" aria-haspopup="true" id="#BrandtWilly_1949-09-07">
+                        <popup-info data-html="true" data-title="Willy Brandt" data-content="<a class='kgparl-link' href='BrandtWilly_1949-09-07.html'&gt;Weitere Daten</a&gt;">Brandt</popup-info></span> auch der Regierende Bürgermeister von Berlin in die Zone geschickt werde;<span class="text-decoration-none text-start seg-note"><a href="#fn4" class="seg-note-link kgparl-link" rel="footnote">4</a></span> aber es gehe bei der Reise von Willy <span class="fst-italic d-inline-block" aria-haspopup="true" id="#BrandtWilly_1949-09-07">
+                        <popup-info data-html="true" data-title="Willy Brandt" data-content="<a class='kgparl-link' href='BrandtWilly_1949-09-07.html'&gt;Weitere Daten</a&gt;">Brandt</popup-info></span> nach Chemnitz nicht um ein Stück Außenpolitik, sondern um Innenpolitik, nämlich um
+                     die Auseinandersetzung zwischen den Parteien in beiden Teilen Deutschlands. Deshalb
+                     könne die Teilnahme von Willy <span class="fst-italic d-inline-block" aria-haspopup="true" id="#BrandtWilly_1949-09-07">
+                        <popup-info data-html="true" data-title="Willy Brandt" data-content="<a class='kgparl-link' href='BrandtWilly_1949-09-07.html'&gt;Weitere Daten</a&gt;">Brandt</popup-info></span> an der Diskussion in Chemnitz nicht als Beweis für die angebliche Existenz zweier
+                     Staaten auf deutschen Boden mißbraucht werden. Im übrigen habe der SPD-Vorschlag in
+                     der Öffentlichkeit ein breites und positives Echo gefunden, auch in solchen Kreisen,
+                     die der SPD sonst kritisch gegenüberständen. Fritz <span class="fst-italic d-inline-block" aria-haspopup="true" id="#ErlerFritz_1949-09-07">
+                        <popup-info data-html="true" data-title="Fritz Erler" data-content="<a class='kgparl-link' href='ErlerFritz_1949-09-07.html'&gt;Weitere Daten</a&gt;">Erler</popup-info></span> betonte die Notwendigkeit einer möglichst breiten Plattform der demokratischen Parteien
+                     gegenüber der kommunistische Einheitspartei.</p>
+                  				
+                  <p>Darum habe die SPD während der Beratung um ihre »Offene Antwort« auf den »Offenen
+                     Brief« der SED in jeder Phase die anderen im Bundestag vertretenen Parteien über ihre
+                     Ziele auf dem laufenden gehalten. So seien auch die Bundesminister <span class="fst-italic d-inline-block" aria-haspopup="true" id="#MendeErich_1949-09-07">
+                        <popup-info data-html="true" data-title="Erich Mende" data-content="<a class='kgparl-link' href='MendeErich_1949-09-07.html'&gt;Weitere Daten</a&gt;">Mende</popup-info></span> und <span class="fst-italic d-inline-block" aria-haspopup="true" id="#GradlJohannBaptist_1957-10-15">
+                        <popup-info data-html="true" data-title="Johann Baptist Gradl" data-content="<a class='kgparl-link' href='GradlJohannBaptist_1957-10-15.html'&gt;Weitere Daten</a&gt;">Gradl</popup-info></span> unterrichtet worden, wenn sie auch freilich nicht im Redaktionskomitee des SPD-Vorstandes
+                     gesessen hätten.<span class="text-decoration-none text-start seg-note"><a href="#fn5" class="seg-note-link kgparl-link" rel="footnote">5</a></span>
+                     				</p>
+                  				
+                  <p>Es sei das Ziel der Auseinandersetzung mit der SED, das Leben der Menschen im gespaltenen
+                     Deutschland zu erleichtern. Das ändere nichts an der Verantwortlichkeit der vier Großmächte
+                     für die Zukunft Deutschlands als Ganzes. Man müsse aber der Gefahr begegnen, daß bei
+                     den Großmächten der Eindruck entstehe, als hätten sich die Deutschen mit der Spaltung
+                     ihres Landes abgefunden. Auch hierin liege die Bedeutung des Meinungsaustausches.
+                     Man müsse die Großmächte dazu bringen, sich wieder mit der deutschen Frage zu beschäftigen.</p>
+                  				
+                  <p>Fritz <span class="fst-italic d-inline-block" aria-haspopup="true" id="#ErlerFritz_1949-09-07">
+                        <popup-info data-html="true" data-title="Fritz Erler" data-content="<a class='kgparl-link' href='ErlerFritz_1949-09-07.html'&gt;Weitere Daten</a&gt;">Erler</popup-info></span> ging sodann auf die für den 21. April in Aussicht genommenen Gespräche der Parteien
+                     beim Bundeskanzler über die künftige Deutschland- und Ostpolitik ein.<span class="text-decoration-none text-start seg-note"><a href="#fn6" class="seg-note-link kgparl-link" rel="footnote">6</a></span> Bei diesen Gesprächen gehe es um eine Bestandsaufnahme und notwendige Inventur. Er,
+                     <span class="fst-italic d-inline-block" aria-haspopup="true" id="#ErlerFritz_1949-09-07">
+                        <popup-info data-html="true" data-title="Fritz Erler" data-content="<a class='kgparl-link' href='ErlerFritz_1949-09-07.html'&gt;Weitere Daten</a&gt;">Erler</popup-info></span>, erwarte sich von diesen Gesprächen sehr wenig; insbesondere werden die Regierungsparteien
+                     und der Kanzler keinen Zeitplan für die künftige Deutschland- und Ostpolitik vorlegen.
+                     Auch sei der gegenwärtige Zeitpunkt wegen des Vietnam-Krieges äußerst ungünstig für
+                     irgend eine Initiative in der Deutschland- und Ostpolitik. Jetzt gehe es vielmehr
+                     darum, was getan werden kann, um bei der faktischen Fortdauer der Spaltung Deutschlands
+                     den Zusammenhang der Nation zu wahren; die Menschen in Deutschland dürften sich nicht
+                     noch weiter auseinanderleben; die Kontakte zwischen den Menschen in beiden Teilen
+                     Deutschlands müßten daher verstärkt werden. In diesem Zusammenhang gehören all die
+                     vielen erörterten Maßnahmen vom Nachbarschaftsverkehr im Zonenrandgebiet<span class="text-decoration-none text-start seg-note"><a href="#fn7" class="seg-note-link kgparl-link" rel="footnote">7</a></span> bis zum Zeitungsaustausch<span class="text-decoration-none text-start seg-note"><a href="#fn8" class="seg-note-link kgparl-link" rel="footnote">8</a></span> zwischen beiden Teilen Deutschlands.</p>
+                  				
+                  <p>Fritz <span class="fst-italic d-inline-block" aria-haspopup="true" id="#ErlerFritz_1949-09-07">
+                        <popup-info data-html="true" data-title="Fritz Erler" data-content="<a class='kgparl-link' href='ErlerFritz_1949-09-07.html'&gt;Weitere Daten</a&gt;">Erler</popup-info></span> geht sodann auf die Erfahrungen und Eindrücke seiner jüngsten Reise in die Vereinigten
+                     Staaten und im Zusammenhang damit auf Fragen zur Lösung der gegenwärtigen NATO-Krise
+                     ein.<span class="text-decoration-none text-start seg-note"><a href="#fn9" class="seg-note-link kgparl-link" rel="footnote">9</a></span>
+                     				</p>
+                  				
+                  <p>Die öffentliche Diskussion in den USA werde gegenwärtig ganz und gar vom Vietnam-Krieg
+                     beherrscht. Das solle nicht heißen, daß die amtlichen Kreise in Washington sich nicht
+                     auch Gedanken über die gegenwärtige, von <span class="fst-italic d-inline-block" aria-haspopup="true" id="#deGaulleCharles">
+                        <popup-info data-html="true" data-title="Charles de Gaulle" data-content="<a class='kgparl-link' href='deGaulleCharles.html'&gt;Weitere Daten</a&gt;">de Gaulle</popup-info></span> ausgelöste NATO-Krise<span class="text-decoration-none text-start seg-note"><a href="#fn10" class="seg-note-link kgparl-link" rel="footnote">10</a></span> machen würden: Das Interesse hierfür sei dort nicht minder groß als in Europa.</p>
+                  				
+                  <p>Fritz <span class="fst-italic d-inline-block" aria-haspopup="true" id="#ErlerFritz_1949-09-07">
+                        <popup-info data-html="true" data-title="Fritz Erler" data-content="<a class='kgparl-link' href='ErlerFritz_1949-09-07.html'&gt;Weitere Daten</a&gt;">Erler</popup-info></span> erinnert daran, daß – wenn sich jetzt Frankreich aus seinen Verpflichtungen nach
+                     dem NATO-Vertrag lösen wolle – sich doch Frankreich nicht so ohne weiteres aus den
+                     klaren und eindeutigen Verpflichtungen des WEU-Vertrages lösen könne, der für 50 Jahre
+                     abgeschlossen sei und eine eindeutige und automatische Beistandsverpflichtung (im
+                     Gegensatz zum NATO-Vertrage) im Falle eines Angriffs konstatiere.<span class="text-decoration-none text-start seg-note"><a href="#fn11" class="seg-note-link kgparl-link" rel="footnote">11</a></span>
+                     				</p>
+                  				
+                  <p>Was nun die NATO-Krise anbelange, so komme es nach seiner Meinung auf folgendes an:
+                     Wenn sich auch die westliche Allianz nicht einfach dem französischen Willen unterwerfen
+                     könne, so müsse doch das deutsch-französische Verhältnis so gut wie möglich erhalten
+                     bleiben. Von deutscher Seite sollte man jedenfalls alles vermeiden, was dieses Verhältnis
+                     unnötig belasten könnte.</p>
+                  				
+                  <p>Für die auf deutschen Boden stehenden französischen Truppen sei eine Neuregelung zwingend
+                     notwendig.<span class="text-decoration-none text-start seg-note"><a href="#fn12" class="seg-note-link kgparl-link" rel="footnote">12</a></span> Für Frankreich, Deutschland und die gesamte Allianz sei es wünschenswert, wenn es
+                     in der gemeinsamen Verteidigung auch ein französisches Element gäbe. Es müsse aber
+                     konkret festgelegt sein, unter welchen Umständen diese französischen Truppen am gemeinsamen
+                     Verteidigungsauftrag beteiligt seien. Das erfordere auch schon in Friedenszeiten Festlegungen
+                     über die Strategie, die Verteidigungsplanung und das für den Ernstfall vorgesehene
+                     Kommandoverhältnis. Der NATO-Rat solle in Paris bleiben, es sei denn, daß eine Verlegung
+                     dieses Gremiums aus technischen Gründen notwendig sei. Aber man sollte es hier nicht
+                     auf eine demonstrative Verlegung aus Frankreich nur deshalb ankommen lassen, um <span class="fst-italic d-inline-block" aria-haspopup="true" id="#deGaulleCharles">
+                        <popup-info data-html="true" data-title="Charles de Gaulle" data-content="<a class='kgparl-link' href='deGaulleCharles.html'&gt;Weitere Daten</a&gt;">de Gaulle</popup-info></span> zu ärgern.<span class="text-decoration-none text-start seg-note"><a href="#fn13" class="seg-note-link kgparl-link" rel="footnote">13</a></span>
+                     				</p>
+                  				
+                  <p>Außer Vietnam-Krieg und NATO-Krise haben seine (<span class="fst-italic d-inline-block" aria-haspopup="true" id="#ErlerFritz_1949-09-07">
+                        <popup-info data-html="true" data-title="Fritz Erler" data-content="<a class='kgparl-link' href='ErlerFritz_1949-09-07.html'&gt;Weitere Daten</a&gt;">Erlers</popup-info></span>) Gespräche in den USA auch die weiteren Aussichten der europäischen Einigung sowie
+                     die <span class="fst-italic d-inline-block" aria-haspopup="true" id="#KennedyJohnF">
+                        <popup-info data-html="true" data-title="John F. Kennedy" data-content="<a class='kgparl-link' href='KennedyJohnF.html'&gt;Weitere Daten</a&gt;">Kennedy</popup-info></span>-Runde<span class="text-decoration-none text-start seg-note"><a href="#fn14" class="seg-note-link kgparl-link" rel="footnote">14</a></span> zum Gegenstand gehabt. Sowohl die Aussichten auf die europäische Einigung wie die
+                     auf die <span class="fst-italic d-inline-block" aria-haspopup="true" id="#KennedyJohnF">
+                        <popup-info data-html="true" data-title="John F. Kennedy" data-content="<a class='kgparl-link' href='KennedyJohnF.html'&gt;Weitere Daten</a&gt;">Kennedy</popup-info></span>-Runde werden jetzt in den USA erheblich besser eingeschätzt als noch zur Jahreswende.</p>
+                  				
+                  <p>Viel Aufmerksamkeit habe die deutsche Friedensnote<span class="text-decoration-none text-start seg-note"><a href="#fn15" class="seg-note-link kgparl-link" rel="footnote">15</a></span> gefunden, und zwar nicht nur in amtlichen Kreisen der USA, sondern auch in Kreisen
+                     der UNO, wo er sich ebenfalls zu Gesprächen aufgehalten habe.<span class="text-decoration-none text-start seg-note"><a href="#fn16" class="seg-note-link kgparl-link" rel="footnote">16</a></span>
+                     				</p>
+                  				
+                  <p>Eine wohlwollende Aufmerksamkeit habe in den USA die innerdeutsche Diskussion (Briefaustausch
+                     SED-SPD) gefunden.</p>
+                  				
+                  <p>Nach diesem Bericht von Fritz <span class="fst-italic d-inline-block" aria-haspopup="true" id="#ErlerFritz_1949-09-07">
+                        <popup-info data-html="true" data-title="Fritz Erler" data-content="<a class='kgparl-link' href='ErlerFritz_1949-09-07.html'&gt;Weitere Daten</a&gt;">Erler</popup-info></span> schließt sich eine Aussprache an, in der mehrere Fragen gestellt werden. An der Aussprache
+                     und Fragenstellung beteiligen sich: Fritz <span class="fw-bold" id="#BuettnerFritz_1957-10-15" aria-haspopup="true"><span slot="content"></span><popup-info data-html="true" data-title="Fritz Büttner" data-content="<a class='kgparl-link' href='BuettnerFritz_1957-10-15.html'&gt;Weitere Daten</a&gt;">Büttner</popup-info></span>, Josef <span class="fw-bold" id="#BraunJosef_1961-10-17" aria-haspopup="true"><span slot="content"></span><popup-info data-html="true" data-title="Josef Braun" data-content="<a class='kgparl-link' href='BraunJosef_1961-10-17.html'&gt;Weitere Daten</a&gt;">Braun</popup-info></span>, Dr. Günther <span class="fw-bold" id="#MuellerGuenther_1965-10-19" aria-haspopup="true"><span slot="content"></span><popup-info data-html="true" data-title="Günther Müller" data-content="<a class='kgparl-link' href='MuellerGuenther_1965-10-19.html'&gt;Weitere Daten</a&gt;">Müller</popup-info></span> (München), Willy <span class="fw-bold" id="#KoenenWilly_1953-10-06" aria-haspopup="true"><span slot="content"></span><popup-info data-html="true" data-title="Willy Könen" data-content="<a class='kgparl-link' href='KoenenWilly_1953-10-06.html'&gt;Weitere Daten</a&gt;">Könen</popup-info></span> (Düsseldorf) und Dr. Gerhard <span class="fw-bold" id="#KochGerhard_1961-10-17" aria-haspopup="true"><span slot="content"></span><popup-info data-html="true" data-title="Gerhard Koch" data-content="<a class='kgparl-link' href='KochGerhard_1961-10-17.html'&gt;Weitere Daten</a&gt;">Koch</popup-info></span>. – Fritz <span class="fw-bold" id="#ErlerFritz_1949-09-07" aria-haspopup="true"><span slot="content"></span><popup-info data-html="true" data-title="Fritz Erler" data-content="<a class='kgparl-link' href='ErlerFritz_1949-09-07.html'&gt;Weitere Daten</a&gt;">Erler</popup-info></span> beantwortet die Fragen und nimmt das Schlußwort.</p>
+                  			</div>
+               			
+               <div xmlns:local="http://dse-static.foo.bar"  xmlns:xs="http://www.w3.org/2001/XMLSchema">
+                  				
+                  <p>Punkt 2 der Tagesordnung: Berichte über den Stand der Finanzreform, Berichterstatter:
+                     Friedrich <span class="fst-italic d-inline-block" aria-haspopup="true" id="#SchaeferFriedrich_1957-10-15">
+                        <popup-info data-html="true" data-title="Friedrich Schäfer" data-content="<a class='kgparl-link' href='SchaeferFriedrich_1957-10-15.html'&gt;Weitere Daten</a&gt;">Schäfer</popup-info></span>.</p>
+                  				
+                  <p>Unmittelbar vor der Übergabe des Gutachtens zur Finanzreform<span class="text-decoration-none text-start seg-note"><a href="#fn17" class="seg-note-link kgparl-link" rel="footnote">17</a></span> hätten sich die der SPD angehörenden Ministerpräsidenten und Landtags-Fraktionsvorsitzenden
+                     getroffen, um die Probleme und den weiteren Weg der Behandlung zu beraten.<span class="text-decoration-none text-start seg-note"><a href="#fn18" class="seg-note-link kgparl-link" rel="footnote">18</a></span> Gleichzeitig seien zwei Kommissionen gebildet worden, die für die Partei entsprechende
+                     Vorarbeiten leisten sollen. Den Vorsitz der ersten Kommission haben Alex <span class="fst-italic d-inline-block" aria-haspopup="true" id="#MoellerAlex_1961-10-17">
+                        <popup-info data-html="true" data-title="Alex Möller" data-content="<a class='kgparl-link' href='MoellerAlex_1961-10-17.html'&gt;Weitere Daten</a&gt;">Möller</popup-info></span>, den der zweiten Georg-August <span class="fst-italic d-inline-block" aria-haspopup="true" id="#ZinnGeorg-August_1949-09-07">
+                        <popup-info data-html="true" data-title="Georg-August Zinn" data-content="<a class='kgparl-link' href='ZinnGeorg-August_1949-09-07.html'&gt;Weitere Daten</a&gt;">Zinn</popup-info></span> übernommen.<span class="text-decoration-none text-start seg-note"><a href="#fn19" class="seg-note-link kgparl-link" rel="footnote">19</a></span>
+                     				</p>
+                  				
+                  <p>Zusammen mit Bundesbank-Vizepräsident <span class="fst-italic d-inline-block" aria-haspopup="true" id="#TroegerHeinrich">
+                        <popup-info data-html="true" data-title="Heinrich Troeger" data-content="<a class='kgparl-link' href='TroegerHeinrich.html'&gt;Weitere Daten</a&gt;">Troeger</popup-info></span>
+                     					<span class="text-decoration-none text-start seg-note"><a href="#fn20" class="seg-note-link kgparl-link" rel="footnote">20</a></span> sei das Gutachten auch in einer Länderkonferenz der Bundestagsfraktion behandelt
+                     worden.<span class="text-decoration-none text-start seg-note"><a href="#fn21" class="seg-note-link kgparl-link" rel="footnote">21</a></span> Bei einer Sitzung in Wiesbaden seien angesichts der vielfältigen Probleme weitere
+                     Unterkommissionen gebildet worden für Gemeindefinanzen (<span class="fst-italic d-inline-block" aria-haspopup="true" id="#OswaldEduard_1987-02-18">
+                        <popup-info data-html="true" data-title="Eduard Oswald" data-content="<a class='kgparl-link' href='OswaldEduard_1987-02-18.html'&gt;Weitere Daten</a&gt;">Oswald</popup-info></span>), Gemeinschaftsaufgaben (Dr. <span class="fst-italic d-inline-block" aria-haspopup="true" id="#SchaeferFriedrich_1957-10-15">
+                        <popup-info data-html="true" data-title="Friedrich Schäfer" data-content="<a class='kgparl-link' href='SchaeferFriedrich_1957-10-15.html'&gt;Weitere Daten</a&gt;">Schäfer</popup-info></span>) und Konjunkturpolitik (<span class="fst-italic d-inline-block" aria-haspopup="true" id="#KubelAlfred">
+                        <popup-info data-html="true" data-title="Alfred Kubel" data-content="<a class='kgparl-link' href='KubelAlfred.html'&gt;Weitere Daten</a&gt;">Kubel</popup-info></span>).<span class="text-decoration-none text-start seg-note"><a href="#fn22" class="seg-note-link kgparl-link" rel="footnote">22</a></span>
+                     				</p>
+                  				
+                  <p>Die Beratungen müßten unter Zeitdruck erfolgen, damit auf dem Parteitag in Dortmund
+                     etwas zur Finanzreform gesagt werden könne.<span class="text-decoration-none text-start seg-note"><a href="#fn23" class="seg-note-link kgparl-link" rel="footnote">23</a></span> Es komme darauf an, keinesfalls einseitige Stellungnahmen abzugeben, etwa aus der
+                     Sicht der Großstädte, der Länder, der Kreise oder der Gemeinden. Deshalb sei auch
+                     der SPD-Landesausschuß (<span class="fst-italic d-inline-block" aria-haspopup="true" id="#ZerbeEdwin_1965-10-19">
+                        <popup-info data-html="true" data-title="Edwin Zerbe" data-content="<a class='kgparl-link' href='ZerbeEdwin_1965-10-19.html'&gt;Weitere Daten</a&gt;">Zerbe</popup-info></span>)<span class="text-decoration-none text-start seg-note"><a href="#fn24" class="seg-note-link kgparl-link" rel="footnote">24</a></span> und der Städteausschuß (<span class="fst-italic d-inline-block" aria-haspopup="true" id="#VogelHans-Jochen_1972-12-13">
+                        <popup-info data-html="true" data-title="Hans-Jochen Vogel" data-content="<a class='kgparl-link' href='VogelHans-Jochen_1972-12-13.html'&gt;Weitere Daten</a&gt;">Vogel</popup-info></span>)<span class="text-decoration-none text-start seg-note"><a href="#fn25" class="seg-note-link kgparl-link" rel="footnote">25</a></span> an den Beratungen beteiligt. Alle Beteiligten würden mit ihren Auffassungen an den
+                     PV gelangen, der dann für Dortmund eine Plattform erarbeiten könne.<span class="text-decoration-none text-start seg-note"><a href="#fn26" class="seg-note-link kgparl-link" rel="footnote">26</a></span>
+                     				</p>
+                  				
+                  <p>Es schließt sich eine Diskussion an.</p>
+                  				
+                  <p>Hans <span class="fw-bold" id="#HermsdorfHans_1953-10-06" aria-haspopup="true"><span slot="content"></span><popup-info data-html="true" data-title="Hans Hermsdorf" data-content="<a class='kgparl-link' href='HermsdorfHans_1953-10-06.html'&gt;Weitere Daten</a&gt;">Hermsdorf</popup-info></span> sagte, es gehe bei den Beratungen darum, die Probleme aller Ebenen zu sehen und zu
+                     berücksichtigen, also eine Stellungnahme der Gesamtpartei zu erarbeiten.</p>
+                  				
+                  <p>Zu der Frage von Lucie <span class="fw-bold" id="#BeyerKurlbaum-BeyerLucie_1953-10-06" aria-haspopup="true"><span slot="content"></span><popup-info data-html="true" data-title="Lucie Kurlbaum-Beyer, geb. Fuchs" data-content="<a class='kgparl-link' href='BeyerKurlbaum-BeyerLucie_1953-10-06.html'&gt;Weitere Daten</a&gt;">Kurlbaum-Beyer</popup-info></span>, wer denn die Mitglieder der Fraktion in die Kommission benannt habe, sagte Fr. <span class="fw-bold" id="#SchaeferFriedrich_1957-10-15" aria-haspopup="true"><span slot="content"></span><popup-info data-html="true" data-title="Friedrich Schäfer" data-content="<a class='kgparl-link' href='SchaeferFriedrich_1957-10-15.html'&gt;Weitere Daten</a&gt;">Schäfer</popup-info></span>, die Mitglieder seien vom PV berufen worden.<span class="text-decoration-none text-start seg-note"><a href="#fn27" class="seg-note-link kgparl-link" rel="footnote">27</a></span>
+                     				</p>
+                  				
+                  <p>Walter <span class="fw-bold" id="#SeuffertWalter_1949-09-07" aria-haspopup="true"><span slot="content"></span><popup-info data-html="true" data-title="Walter Seuffert" data-content="<a class='kgparl-link' href='SeuffertWalter_1949-09-07.html'&gt;Weitere Daten</a&gt;">Seuffert</popup-info></span> zeigte sich besorgt, daß in Dortmund unter Zeitdruck Festlegungen getroffen werden
+                     könnten und verwies dabei auf verschiedene steuerpolitische Schwächen des Gutachtens,
+                     das zwar Wege, aber kaum Lösungen aufzeige.</p>
+                  			</div>
+               			
+               <div xmlns:local="http://dse-static.foo.bar"  xmlns:xs="http://www.w3.org/2001/XMLSchema">
+                  				
+                  <p>Punkt 3 der Tagesordnung: Vorbereitung der Plenarsitzungen</p>
+                  				
+                  <p>Karl <span class="fw-bold" id="#MommerKarl_1949-09-07" aria-haspopup="true"><span slot="content"></span><popup-info data-html="true" data-title="Karl Mommer" data-content="<a class='kgparl-link' href='MommerKarl_1949-09-07.html'&gt;Weitere Daten</a&gt;">Mommer</popup-info></span> berichtet über den Ablauf der Plenarsitzungen der Woche (35.–37. Sitzung des Deutschen
+                     Bundestages).</p>
+                  				
+                  <p>Schon jetzt wird darauf hingewiesen, daß am 17. und 18. Mai die Haushaltsberatungen
+                     im Plenum (2. Beratung) stattfinden [werden].<span class="text-decoration-none text-start seg-note"><a href="#fn28" class="seg-note-link kgparl-link" rel="footnote">28</a></span> Schon am 3. Mai muß in der Fraktion über den Haushalt beraten werden,<span class="text-decoration-none text-start seg-note"><a href="#fn29" class="seg-note-link kgparl-link" rel="footnote">29</a></span> da der Tag vor Beginn der 2. Lesung, Montag, der 16. Mai sei, an dem in der Fraktion
+                     nicht viel Zeit zur Verfügung stände. Am 25., 26. und 27. Mai soll dann die 3. Beratung
+                     des Etats stattfinden.</p>
+                  			</div>
+               			
+               <div xmlns:local="http://dse-static.foo.bar"  xmlns:xs="http://www.w3.org/2001/XMLSchema">
+                  				
+                  <p>Punkt 4 der Tagesordnung: Vorlagen aus den Arbeitskreisen</p>
+                  				
+                  <p>a) Antrag betr. internationale Organisationen (Die Einbringung dieses Antrages wird
+                     beschlossen.)<span class="text-decoration-none text-start seg-note"><a href="#fn30" class="seg-note-link kgparl-link" rel="footnote">30</a></span>
+                     				</p>
+                  				
+                  <p>b) Antrag betr. Europäische Schulen (Die Einbringung dieses Antrages wird beschlossen.)<span class="text-decoration-none text-start seg-note"><a href="#fn31" class="seg-note-link kgparl-link" rel="footnote">31</a></span>
+                     				</p>
+                  				
+                  <p>c) Kleine Anfrage betr. Erlaß von Verwaltungsvorschriften zum Ausländergesetz (Die
+                     Einbringung der Anfrage wird beschlossen.)<span class="text-decoration-none text-start seg-note"><a href="#fn32" class="seg-note-link kgparl-link" rel="footnote">32</a></span>
+                     				</p>
+                  				
+                  <p>d) Militär- und Ausbildungshilfe</p>
+                  				
+                  <p>Herbert <span class="fw-bold" id="#WehnerHerbert_1949-09-07" aria-haspopup="true"><span slot="content"></span><popup-info data-html="true" data-title="Herbert Wehner" data-content="<a class='kgparl-link' href='WehnerHerbert_1949-09-07.html'&gt;Weitere Daten</a&gt;">Wehner</popup-info></span> begründet den Antrag. Es schließt sich eine lebhafte Diskussion an, in der Hans <span class="fw-bold" id="#HermsdorfHans_1953-10-06" aria-haspopup="true"><span slot="content"></span><popup-info data-html="true" data-title="Hans Hermsdorf" data-content="<a class='kgparl-link' href='HermsdorfHans_1953-10-06.html'&gt;Weitere Daten</a&gt;">Hermsdorf</popup-info></span>, Fritz <span class="fw-bold" id="#ErlerFritz_1949-09-07" aria-haspopup="true"><span slot="content"></span><popup-info data-html="true" data-title="Fritz Erler" data-content="<a class='kgparl-link' href='ErlerFritz_1949-09-07.html'&gt;Weitere Daten</a&gt;">Erler</popup-info></span>, Heinz <span class="fw-bold" id="#WestphalHeinz_1965-10-19" aria-haspopup="true"><span slot="content"></span><popup-info data-html="true" data-title="Heinz Westphal" data-content="<a class='kgparl-link' href='WestphalHeinz_1965-10-19.html'&gt;Weitere Daten</a&gt;">Westphal</popup-info></span>, <span class="fw-bold" id="#Kahn-AckermannGeorg_1953-10-06" aria-haspopup="true"><span slot="content"></span><popup-info data-html="true" data-title="Georg Kahn-Ackermann" data-content="<a class='kgparl-link' href='Kahn-AckermannGeorg_1953-10-06.html'&gt;Weitere Daten</a&gt;">Kahn-Ackermann</popup-info></span>, Lucie <span class="fw-bold" id="#BeyerKurlbaum-BeyerLucie_1953-10-06" aria-haspopup="true"><span slot="content"></span><popup-info data-html="true" data-title="Lucie Kurlbaum-Beyer, geb. Fuchs" data-content="<a class='kgparl-link' href='BeyerKurlbaum-BeyerLucie_1953-10-06.html'&gt;Weitere Daten</a&gt;">Kurlbaum-Beyer</popup-info></span> und Margarete <span class="fw-bold" id="#HeiseBerger-HeiseMargarete_1953-10-06" aria-haspopup="true"><span slot="content"></span><popup-info data-html="true" data-title="Margarete Berger-Heise" data-content="<a class='kgparl-link' href='HeiseBerger-HeiseMargarete_1953-10-06.html'&gt;Weitere Daten</a&gt;">Berger-Heise</popup-info></span> sprechen.</p>
+                  				
+                  <p>Es wird auf Vorschlag von Fritz <span class="fw-bold" id="#ErlerFritz_1949-09-07" aria-haspopup="true"><span slot="content"></span><popup-info data-html="true" data-title="Fritz Erler" data-content="<a class='kgparl-link' href='ErlerFritz_1949-09-07.html'&gt;Weitere Daten</a&gt;">Erler</popup-info></span> folgendes beschlossen:</p>
+                  				
+                  <p>1. Der Titel des Antrages soll geändert werden in: »Militärische Ausrüstungs- und
+                     Ausbildungshilfe«<span class="text-decoration-none text-start seg-note"><a href="#fn33" class="seg-note-link kgparl-link" rel="footnote">33</a></span>
+                     				</p>
+                  				
+                  <p>2. In Ziffer 3 soll es eingangs heißen: »Rechtskräftig nach ordnungsgemäßer Einschaltung
+                     des Deutschen Bundestages … «<span class="text-decoration-none text-start seg-note"><a href="#fn34" class="seg-note-link kgparl-link" rel="footnote">34</a></span>
+                     				</p>
+                  				
+                  <p>Die Fraktion beschließt, den Antrag mit vorstehenden Änderungen einzubringen und zwar
+                     bei einer Gegenstimme und 5 Enthaltungen.</p>
+                  				
+                  <p>Punkt 5 der Tagesordnung: Wahl von Luise <span class="fst-italic d-inline-block" aria-haspopup="true" id="#HerklotzLuise_1956-09-24">
+                        <popup-info data-html="true" data-title="Luise Herklotz" data-content="<a class='kgparl-link' href='HerklotzLuise_1956-09-24.html'&gt;Weitere Daten</a&gt;">Herklotz</popup-info></span> in den Europarat anstelle von Elinor <span class="fst-italic d-inline-block" aria-haspopup="true" id="#HubertElinor_1949-09-07">
+                        <popup-info data-html="true" data-title="Elinor Hubert" data-content="<a class='kgparl-link' href='HubertElinor_1949-09-07.html'&gt;Weitere Daten</a&gt;">Hubert</popup-info></span>
+                     					<span class="text-decoration-none text-start seg-note"><a href="#fn35" class="seg-note-link kgparl-link" rel="footnote">35</a></span>
+                     				</p>
+                  				
+                  <p>Dieser Punkt der Tagesordnung wird nicht aufgerufen.</p>
+                  			</div>
+               			
+               <div xmlns:local="http://dse-static.foo.bar"  xmlns:xs="http://www.w3.org/2001/XMLSchema">
+                  				
+                  <p>Punkt 6 derTagesordnung: Die nächsten Termine:</p>
+                  				
+                  <p>
+                     					
+                     						
+                     							In Berlin: Dienstag,
+                     							d. 26.4.
+                     							um 11.00 Uhr
+                     							Vorstandssitzung
+                     							[In Berlin: Dienstag,] 15.00 [Uhr]
+                     							Fraktionssitzung
+                     						
+                     						
+                     							In Bonn: Dienstag,
+                     							d. 3.5.
+                     							um 11.00 Uhr
+                     							Vorstandssitzung
+                     							[In Bonn: Dienstag,] 15.00 [Uhr]
+                     							Fraktionssitzung
+                     						
+                     						
+                     							In Bonn: Montag,
+                     							d. 16.5.
+                     							um 14.00 Uhr
+                     							Vorstandssitzung
+                     							[In Bonn: Dienstag,] 17.00 [Uhr]
+                     							Fraktionssitzung
+                     						
+                     					
+                     				</p>
+                  				
+                  <p>Punkt 7 der Tagesordnung: Verschiedenes</p>
+                  				
+                  <p>Heinz <span class="fw-bold" id="#FrehseeHeinz_1953-10-06" aria-haspopup="true"><span slot="content"></span><popup-info data-html="true" data-title="Heinz Frehsee" data-content="<a class='kgparl-link' href='FrehseeHeinz_1953-10-06.html'&gt;Weitere Daten</a&gt;">Frehsee</popup-info></span> macht Mitteilung über Fertigstellung und Verteilung der Abgeordneten-Appartements
+                     der Theodor-Heuß-Allee.</p>
+                  				
+                  <p>Karl <span class="fw-bold" id="#MommerKarl_1949-09-07" aria-haspopup="true"><span slot="content"></span><popup-info data-html="true" data-title="Karl Mommer" data-content="<a class='kgparl-link' href='MommerKarl_1949-09-07.html'&gt;Weitere Daten</a&gt;">Mommer</popup-info></span> stellt anheim, die vielen Petitionen der Ostermarschierer zu beantworten, sofern
+                     sie mit Namen und Adresse gekennzeichnet sind.<span class="text-decoration-none text-start seg-note"><a href="#fn36" class="seg-note-link kgparl-link" rel="footnote">36</a></span>
+                     				</p>
+                  				
+                  <p>Fritz <span class="fw-bold" id="#ErlerFritz_1949-09-07" aria-haspopup="true"><span slot="content"></span><popup-info data-html="true" data-title="Fritz Erler" data-content="<a class='kgparl-link' href='ErlerFritz_1949-09-07.html'&gt;Weitere Daten</a&gt;">Erler</popup-info></span> teil den Tod eines bekannten finnischen Sozialdemokraten mit.<span class="text-decoration-none text-start seg-note"><a href="#fn37" class="seg-note-link kgparl-link" rel="footnote">37</a></span>
+                     				</p>
+                  				
+                  <p>Protokoll: Alexander <span class="fst-italic d-inline-block" aria-haspopup="true" id="#SchubartAlexander">
+                        <popup-info data-html="true" data-title="Alexander Schubart" data-content="<a class='kgparl-link' href='SchubartAlexander.html'&gt;Weitere Daten</a&gt;">Schubart</popup-info></span>
+                     				</p>
+                  			</div>
+               		</body>
+            <div class="position-absolute top-0 end-0">
+               <aside class="position-sticky">
+                  <h2> Person </h2>
+                  <ul xmlns:local="http://dse-static.foo.bar"  xmlns:xs="http://www.w3.org/2001/XMLSchema">
+                     <li>
+                        <custom-checkbox key="ArndtAdolf_1949-09-07" color="rgb(4,130,99)">Adolf Arndt</custom-checkbox>
+                     </li>
+                     <li>
+                        <custom-checkbox key="BeyerKurlbaum-BeyerLucie_1953-10-06" color="rgb(4,130,99)">Lucie Kurlbaum-Beyer, geb. Fuchs</custom-checkbox>
+                     </li>
+                     <li>
+                        <custom-checkbox key="BrandtWilly_1949-09-07" color="rgb(4,130,99)">Willy Brandt</custom-checkbox>
+                     </li>
+                     <li>
+                        <custom-checkbox key="BraunJosef_1961-10-17" color="rgb(4,130,99)">Josef Braun</custom-checkbox>
+                     </li>
+                     <li>
+                        <custom-checkbox key="BuettnerFritz_1957-10-15" color="rgb(4,130,99)">Fritz Büttner</custom-checkbox>
+                     </li>
+                     <li>
+                        <custom-checkbox key="ErhardLudwig_1949-09-07" color="rgb(4,130,99)">Ludwig Erhard</custom-checkbox>
+                     </li>
+                     <li>
+                        <custom-checkbox key="ErlerFritz_1949-09-07" color="rgb(4,130,99)">Fritz Erler</custom-checkbox>
+                     </li>
+                     <li>
+                        <custom-checkbox key="FrehseeHeinz_1953-10-06" color="rgb(4,130,99)">Heinz Frehsee</custom-checkbox>
+                     </li>
+                     <li>
+                        <custom-checkbox key="FulbrightJamesW" color="rgb(4,130,99)"></custom-checkbox>
+                     </li>
+                     <li>
+                        <custom-checkbox key="GradlJohannBaptist_1957-10-15" color="rgb(4,130,99)">Johann Baptist Gradl</custom-checkbox>
+                     </li>
+                     <li>
+                        <custom-checkbox key="HaseKarl-Guenthervon" color="rgb(4,130,99)"></custom-checkbox>
+                     </li>
+                     <li>
+                        <custom-checkbox key="HeiseBerger-HeiseMargarete_1953-10-06" color="rgb(4,130,99)">Margarete Berger-Heise</custom-checkbox>
+                     </li>
+                     <li>
+                        <custom-checkbox key="HerklotzLuise_1956-09-24" color="rgb(4,130,99)">Luise Herklotz</custom-checkbox>
+                     </li>
+                     <li>
+                        <custom-checkbox key="HermsdorfHans_1953-10-06" color="rgb(4,130,99)">Hans Hermsdorf</custom-checkbox>
+                     </li>
+                     <li>
+                        <custom-checkbox key="HerrmannJoachim" color="rgb(4,130,99)"></custom-checkbox>
+                     </li>
+                     <li>
+                        <custom-checkbox key="HubertElinor_1949-09-07" color="rgb(4,130,99)">Elinor Hubert</custom-checkbox>
+                     </li>
+                     <li>
+                        <custom-checkbox key="HumphreyHubertH" color="rgb(4,130,99)"></custom-checkbox>
+                     </li>
+                     <li>
+                        <custom-checkbox key="JohnsonLyndonB" color="rgb(4,130,99)"></custom-checkbox>
+                     </li>
+                     <li>
+                        <custom-checkbox key="Kahn-AckermannGeorg_1953-10-06" color="rgb(4,130,99)">Georg Kahn-Ackermann</custom-checkbox>
+                     </li>
+                     <li>
+                        <custom-checkbox key="KennedyJohnF" color="rgb(4,130,99)"></custom-checkbox>
+                     </li>
+                     <li>
+                        <custom-checkbox key="KnoeringenWaldemar_1949-09-07" color="rgb(4,130,99)">Waldemar von Knoeringen</custom-checkbox>
+                     </li>
+                     <li>
+                        <custom-checkbox key="KochGerhard_1961-10-17" color="rgb(4,130,99)">Gerhard Koch</custom-checkbox>
+                     </li>
+                     <li>
+                        <custom-checkbox key="KoenenWilly_1953-10-06" color="rgb(4,130,99)">Willy Könen</custom-checkbox>
+                     </li>
+                     <li>
+                        <custom-checkbox key="KripsUrsula_1965-10-19" color="rgb(4,130,99)">Ursula Krips</custom-checkbox>
+                     </li>
+                     <li>
+                        <custom-checkbox key="KubelAlfred" color="rgb(4,130,99)"></custom-checkbox>
+                     </li>
+                     <li>
+                        <custom-checkbox key="KuehnFriedrich_1961-10-17" color="rgb(4,130,99)">Friedrich Kühn</custom-checkbox>
+                     </li>
+                     <li>
+                        <custom-checkbox key="MansfieldMichaelJ" color="rgb(4,130,99)"></custom-checkbox>
+                     </li>
+                     <li>
+                        <custom-checkbox key="McNamaraRobert" color="rgb(4,130,99)"></custom-checkbox>
+                     </li>
+                     <li>
+                        <custom-checkbox key="MendeErich_1949-09-07" color="rgb(4,130,99)">Erich Mende</custom-checkbox>
+                     </li>
+                     <li>
+                        <custom-checkbox key="MoellerAlex_1961-10-17" color="rgb(4,130,99)">Alex Möller</custom-checkbox>
+                     </li>
+                     <li>
+                        <custom-checkbox key="MommerKarl_1949-09-07" color="rgb(4,130,99)">Karl Mommer</custom-checkbox>
+                     </li>
+                     <li>
+                        <custom-checkbox key="MuellerGuenther_1965-10-19" color="rgb(4,130,99)">Günther Müller</custom-checkbox>
+                     </li>
+                     <li>
+                        <custom-checkbox key="MuethlingHans_1965-10-19" color="rgb(4,130,99)">Hans Müthling</custom-checkbox>
+                     </li>
+                     <li>
+                        <custom-checkbox key="OswaldEduard_1987-02-18" color="rgb(4,130,99)">Eduard Oswald</custom-checkbox>
+                     </li>
+                     <li>
+                        <custom-checkbox key="PastoreJohnO" color="rgb(4,130,99)"></custom-checkbox>
+                     </li>
+                     <li>
+                        <custom-checkbox key="PurwinHilde" color="rgb(4,130,99)"></custom-checkbox>
+                     </li>
+                     <li>
+                        <custom-checkbox key="RostowEugeneV" color="rgb(4,130,99)"></custom-checkbox>
+                     </li>
+                     <li>
+                        <custom-checkbox key="RuhnauHeinz" color="rgb(4,130,99)"></custom-checkbox>
+                     </li>
+                     <li>
+                        <custom-checkbox key="RuskDeanD" color="rgb(4,130,99)"></custom-checkbox>
+                     </li>
+                     <li>
+                        <custom-checkbox key="SchaeferFriedrich_1957-10-15" color="rgb(4,130,99)">Friedrich Schäfer</custom-checkbox>
+                     </li>
+                     <li>
+                        <custom-checkbox key="SchoettleErwin_1949-09-07" color="rgb(4,130,99)">Erwin Schoettle</custom-checkbox>
+                     </li>
+                     <li>
+                        <custom-checkbox key="SchubartAlexander" color="rgb(4,130,99)"></custom-checkbox>
+                     </li>
+                     <li>
+                        <custom-checkbox key="SeuffertWalter_1949-09-07" color="rgb(4,130,99)">Walter Seuffert</custom-checkbox>
+                     </li>
+                     <li>
+                        <custom-checkbox key="StallbergFritz" color="rgb(4,130,99)"></custom-checkbox>
+                     </li>
+                     <li>
+                        <custom-checkbox key="TannerVainoe" color="rgb(4,130,99)"></custom-checkbox>
+                     </li>
+                     <li>
+                        <custom-checkbox key="TroegerHeinrich" color="rgb(4,130,99)"></custom-checkbox>
+                     </li>
+                     <li>
+                        <custom-checkbox key="VogelHans-Jochen_1972-12-13" color="rgb(4,130,99)">Hans-Jochen Vogel</custom-checkbox>
+                     </li>
+                     <li>
+                        <custom-checkbox key="WehnerHerbert_1949-09-07" color="rgb(4,130,99)">Herbert Wehner</custom-checkbox>
+                     </li>
+                     <li>
+                        <custom-checkbox key="WestphalHeinz_1965-10-19" color="rgb(4,130,99)">Heinz Westphal</custom-checkbox>
+                     </li>
+                     <li>
+                        <custom-checkbox key="ZerbeEdwin_1965-10-19" color="rgb(4,130,99)">Edwin Zerbe</custom-checkbox>
+                     </li>
+                     <li>
+                        <custom-checkbox key="ZinnGeorg-August_1949-09-07" color="rgb(4,130,99)">Georg-August Zinn</custom-checkbox>
+                     </li>
+                     <li>
+                        <custom-checkbox key="deGaulleCharles" color="rgb(4,130,99)"></custom-checkbox>
+                     </li>
+                  </ul>
+               </aside>
+            </div>
+         </div>
+      </main>
+      <div class="container">
+         <p style="text-align:center;">
+            <hr id="footnotes-divider">
+            <div id="footnotes-container">
+               <div class="footnotes d-flex" id="note__3"><a name="fn1"><a href="#fna_1"><span style="font-size:7pt;vertical-align:super; margin-right: 0.4em">1</span></a></a>
+                  							
+                  <p xmlns:local="http://dse-static.foo.bar"  xmlns:xs="http://www.w3.org/2001/XMLSchema">Bei den Bürgerschaftswahlen am 27.3.1966 in Hamburg steigerte die SPD ihren Stimmenanteil
+                     auf 59,0% (1961: 57,4%). Vgl. <a href="https://www.fraktionsprotokolle.de/literaturregister.html?id=" class="kgparl-link" target="_blank">AdG 1966, S. 12415</a>.</p>
+                  						<a class="fn-back kgparl-link" href="#fnref_spd_04_1965_06_23_t1435_EP_FN003">↩</a></div>
+               <div class="footnotes d-flex" id="note__23"><a name="fn2"><a href="#fna_2"><span style="font-size:7pt;vertical-align:super; margin-right: 0.4em">2</span></a></a>
+                  							
+                  <p xmlns:local="http://dse-static.foo.bar"  xmlns:xs="http://www.w3.org/2001/XMLSchema">Auf den Offenen Brief des Zentralkomitees der SED vom 7.2.1966 »an die Delegierten
+                     des Dortmunder Parteitages der SPD und alle Mitglieder und Freunde der Sozialdemokratie
+                     in Westdeutschland« war am 18.3.1966 eine »Offene Antwort des Parteivorstandes der
+                     SPD« erfolgt; abgedr. u. a. in <a href="https://www.fraktionsprotokolle.de/literaturregister.html?id=" class="kgparl-link" target="_blank">Dokumente zur Deutschlandpolitik IV, 12, 1. Hbd., S. 175-183 und 355-359</a>; <a href="https://www.fraktionsprotokolle.de/literaturregister.html?id=" class="kgparl-link" target="_blank">
+                        									Flechtheim, Dokumente, 8. Bd., S. 487-501</a>. <a href="https://www.fraktionsprotokolle.de/literaturregister.html?id=" class="kgparl-link" target="_blank">»Vorwärts« Nr. 13 vom 23.3.1966</a>. – In der <a href="https://www.fraktionsprotokolle.de/literaturregister.html?id=" class="kgparl-link" target="_blank">»Vorsitzendenbesprechung am 4.3.1966 in Berlin« (AdsD, Präsidium v. 5. Nov.1965 bis
+                        Juni 1966)</a> war <span class="fst-italic d-inline-block" aria-haspopup="true" id="#WehnerHerbert_1949-09-07">
+                        <popup-info data-html="true" data-title="Herbert Wehner" data-content="<a class='kgparl-link' href='WehnerHerbert_1949-09-07.html'&gt;Weitere Daten</a&gt;">Wehner</popup-info></span> mit dem Entwurf einer Antwort an die SED beauftragt worden. Der <a href="https://www.fraktionsprotokolle.de/literaturregister.html?id=" class="kgparl-link" target="_blank">»Sitzung des Präsidiums am 11.3.1966« (ebd.)</a> lag neben dem <span class="fst-italic d-inline-block" aria-haspopup="true" id="#WehnerHerbert_1949-09-07">
+                        <popup-info data-html="true" data-title="Herbert Wehner" data-content="<a class='kgparl-link' href='WehnerHerbert_1949-09-07.html'&gt;Weitere Daten</a&gt;">Wehner</popup-info></span>-Entwurf, den er am 10.3. <span class="fst-italic d-inline-block" aria-haspopup="true" id="#BrandtWilly_1949-09-07">
+                        <popup-info data-html="true" data-title="Willy Brandt" data-content="<a class='kgparl-link' href='BrandtWilly_1949-09-07.html'&gt;Weitere Daten</a&gt;">Brandt</popup-info></span> übersandte, ein Entwurf <span class="fst-italic d-inline-block" aria-haspopup="true" id="#BrandtWilly_1949-09-07">
+                        <popup-info data-html="true" data-title="Willy Brandt" data-content="<a class='kgparl-link' href='BrandtWilly_1949-09-07.html'&gt;Weitere Daten</a&gt;">Brandts</popup-info></span> vom 11.3.1966 vor (alles als Anl. zum Prot.). <span class="fst-italic d-inline-block" aria-haspopup="true" id="#BrandtWilly_1949-09-07">
+                        <popup-info data-html="true" data-title="Willy Brandt" data-content="<a class='kgparl-link' href='BrandtWilly_1949-09-07.html'&gt;Weitere Daten</a&gt;">Brandt</popup-info></span> und <span class="fst-italic d-inline-block" aria-haspopup="true" id="#ErlerFritz_1949-09-07">
+                        <popup-info data-html="true" data-title="Fritz Erler" data-content="<a class='kgparl-link' href='ErlerFritz_1949-09-07.html'&gt;Weitere Daten</a&gt;">Erler</popup-info></span> wurden beauftragt, die vorgeschlagenen Anregungen »in einem neuen Entwurf zu berücksichtigen«.
+                     Diese Fassung wurde dann mit weiteren Änderungen in der »Sitzung des Parteivorstandes,
+                     des Fraktionsvorstandes, der Kontrollkommission am 18. März 1966« bei zwei Enthaltungen
+                     einstimmig beschlossen. <a href="https://www.fraktionsprotokolle.de/literaturregister.html?id=" class="kgparl-link" target="_blank">Prot. mit dem Entwurf und der endgültigen Fassung, AdsD, PV vom 22.9.1965 bis 15.7.1966</a>. – Auf die Antwort des ZK der SED vom 25.3.1966 erfolgte die zweite »Offene Antwort
+                     des Parteivorstandes der SPD« am 15.4.1966; Text u. a. in <a href="https://www.fraktionsprotokolle.de/literaturregister.html?id=" class="kgparl-link" target="_blank">Dokumente, S. 392-402 und 471-476</a>; auch in <a href="https://www.fraktionsprotokolle.de/literaturregister.html?id=" class="kgparl-link" target="_blank">Jahrbuch SPD 1966/67, S. 315-327</a>; <a href="https://www.fraktionsprotokolle.de/literaturregister.html?id=" class="kgparl-link" target="_blank">
+                        									Flechtheim, S. 501-518</a>. Der Entwurf war von <span class="fst-italic d-inline-block" aria-haspopup="true" id="#WehnerHerbert_1949-09-07">
+                        <popup-info data-html="true" data-title="Herbert Wehner" data-content="<a class='kgparl-link' href='WehnerHerbert_1949-09-07.html'&gt;Weitere Daten</a&gt;">Wehner</popup-info></span>verfaßt und zunächst in der »Sitzung des Parteivorstandes am 13.4.1966«, anschließend
+                     im »Parteirat, 14.4.1966« beraten und abschließend in der »Sitzung des Parteivorstandes
+                     am 15.4.1966« einstimmig gebilligt worden. <a href="https://www.fraktionsprotokolle.de/literaturregister.html?id=" class="kgparl-link" target="_blank">Prot. und Entwurf in: AdsD, PV vom 22.9.1965 und 15.7.1966</a>. – Zu dem »Offenen Briefwechsel« vgl. auch <a href="https://www.fraktionsprotokolle.de/literaturregister.html?id=" class="kgparl-link" target="_blank">W. Bergsdorf, Der gescheiterte Dialog – Startzeichen für eine neue Politik, in: Deutschland-Archiv
+                        11. Jg., 1978, S. 159 ff.</a>
+                     							</p>
+                  						<a class="fn-back kgparl-link" href="#fnref_spd_04_1965_06_23_t1435_EP_FN003">↩</a></div>
+               <div class="footnotes d-flex" id="note__12"><a name="fn3"><a href="#fna_3"><span style="font-size:7pt;vertical-align:super; margin-right: 0.4em">3</span></a></a>
+                  							
+                  <p xmlns:local="http://dse-static.foo.bar"  xmlns:xs="http://www.w3.org/2001/XMLSchema">Die Benennung von <span class="fst-italic d-inline-block" aria-haspopup="true" id="#BrandtWilly_1949-09-07">
+                        <popup-info data-html="true" data-title="Willy Brandt" data-content="<a class='kgparl-link' href='BrandtWilly_1949-09-07.html'&gt;Weitere Daten</a&gt;">Brandt</popup-info></span>, <span class="fst-italic d-inline-block" aria-haspopup="true" id="#ErlerFritz_1949-09-07">
+                        <popup-info data-html="true" data-title="Fritz Erler" data-content="<a class='kgparl-link' href='ErlerFritz_1949-09-07.html'&gt;Weitere Daten</a&gt;">Erler</popup-info></span> und <span class="fst-italic d-inline-block" aria-haspopup="true" id="#WehnerHerbert_1949-09-07">
+                        <popup-info data-html="true" data-title="Herbert Wehner" data-content="<a class='kgparl-link' href='WehnerHerbert_1949-09-07.html'&gt;Weitere Daten</a&gt;">Wehner</popup-info></span> als Redner für die zwischen dem 9. und 13.5.1966 in Chemnitz (Karl-Marx-Stadt) und
+                     16.-20.5.1966 in Hannover geplanten Veranstaltungen erfolgte mit der »Offenen Antwort«
+                     des SPD-Parteivorstandes vom 15.4.1966; vgl. <a href="https://www.fraktionsprotokolle.de/literaturregister.html?id=" class="kgparl-link" target="_blank">Dokumente zur Deutschlandpolitik IV, 12, 1. Hbd., S. 471</a>; <a href="https://www.fraktionsprotokolle.de/literaturregister.html?id=" class="kgparl-link" target="_blank">Jahrbuch SPD 1966/67, S. 321</a>. Sie war in der Sitzung des Parteivorstandes am 15.4.1966 (vgl. 
+                     <tei:ref>
+                        <tei:target>#spd-05_1966-04-19-t1515_EP_FN002</tei:target>Anm. 2</tei:ref>) einstimmig beschlossen worden. Vgl. dazu auch <a href="https://www.fraktionsprotokolle.de/literaturregister.html?id=" class="kgparl-link" target="_blank">»Der Spiegel« Nr. 18 vom 25.4.1966, S. 37</a>, wonach <span class="fst-italic d-inline-block" aria-haspopup="true" id="#BrandtWilly_1949-09-07">
+                        <popup-info data-html="true" data-title="Willy Brandt" data-content="<a class='kgparl-link' href='BrandtWilly_1949-09-07.html'&gt;Weitere Daten</a&gt;">Brandt</popup-info></span> bei einem Gespräch in der Berliner Landesvertretung am 12.4.1966 <span class="fst-italic d-inline-block" aria-haspopup="true" id="#ErlerFritz_1949-09-07">
+                        <popup-info data-html="true" data-title="Fritz Erler" data-content="<a class='kgparl-link' href='ErlerFritz_1949-09-07.html'&gt;Weitere Daten</a&gt;">Erler</popup-info></span> und <span class="fst-italic d-inline-block" aria-haspopup="true" id="#WehnerHerbert_1949-09-07">
+                        <popup-info data-html="true" data-title="Herbert Wehner" data-content="<a class='kgparl-link' href='WehnerHerbert_1949-09-07.html'&gt;Weitere Daten</a&gt;">Wehner</popup-info></span> für den »Plan« gewonnen habe, »selbst in die Zone zu fahren«. Sein Hauptargument
+                     sei gewesen, damit würde »die Zugehörigkeit West-Berlins zur Bundesrepublik« dokumentiert.</p>
+                  						<a class="fn-back kgparl-link" href="#fnref_spd_04_1965_06_23_t1435_EP_FN003">↩</a></div>
+               <div class="footnotes d-flex" id="note__6"><a name="fn4"><a href="#fna_4"><span style="font-size:7pt;vertical-align:super; margin-right: 0.4em">4</span></a></a>
+                  							
+                  <p xmlns:local="http://dse-static.foo.bar"  xmlns:xs="http://www.w3.org/2001/XMLSchema">Zu den Bedenken, die sowohl von CDU/CSU wie von Bundeskanzler <span class="fst-italic d-inline-block" aria-haspopup="true" id="#ErhardLudwig_1949-09-07">
+                        <popup-info data-html="true" data-title="Ludwig Erhard" data-content="<a class='kgparl-link' href='ErhardLudwig_1949-09-07.html'&gt;Weitere Daten</a&gt;">Erhard</popup-info></span> gegen eine Teilnahme <span class="fst-italic d-inline-block" aria-haspopup="true" id="#BrandtWilly_1949-09-07">
+                        <popup-info data-html="true" data-title="Willy Brandt" data-content="<a class='kgparl-link' href='BrandtWilly_1949-09-07.html'&gt;Weitere Daten</a&gt;">Brandts</popup-info></span> an der Veranstaltung in Chemnitz geäußert wurden, vgl. <a href="https://www.fraktionsprotokolle.de/literaturregister.html?id=" class="kgparl-link" target="_blank">»Süddeutsche Zeitung« vom 22.4.1966</a>; auch in <a href="https://www.fraktionsprotokolle.de/literaturregister.html?id=" class="kgparl-link" target="_blank">Dokumente zur Deutschlandpolitik IV, 12, 1. Hbd., S. 487 f. (Anm. 1)</a>.</p>
+                  						<a class="fn-back kgparl-link" href="#fnref_spd_04_1965_06_23_t1435_EP_FN003">↩</a></div>
+               <div class="footnotes d-flex" id="note__15"><a name="fn5"><a href="#fna_5"><span style="font-size:7pt;vertical-align:super; margin-right: 0.4em">5</span></a></a>
+                  							
+                  <p xmlns:local="http://dse-static.foo.bar"  xmlns:xs="http://www.w3.org/2001/XMLSchema">Die SPD hatte schon vor ihrer ersten »Offenen Antwort« den vom Präsidium beratenen
+                     Entwurf (vgl. 
+                     <tei:ref>
+                        <tei:target>#spd-05_1966-04-19-t1515_EP_FN002</tei:target>Anm. 2</tei:ref>) Regierung und Regierungsparteien zur Kenntnis gegeben. <span class="fst-italic d-inline-block" aria-haspopup="true" id="#WehnerHerbert_1949-09-07">
+                        <popup-info data-html="true" data-title="Herbert Wehner" data-content="<a class='kgparl-link' href='WehnerHerbert_1949-09-07.html'&gt;Weitere Daten</a&gt;">Wehner</popup-info></span> als Vors. des Gesamtdeutschen Ausschusses hatte ihn dem Gesamtdeutschen Minister
+                     <span class="fst-italic d-inline-block" aria-haspopup="true" id="#MendeErich_1949-09-07">
+                        <popup-info data-html="true" data-title="Erich Mende" data-content="<a class='kgparl-link' href='MendeErich_1949-09-07.html'&gt;Weitere Daten</a&gt;">Mende</popup-info></span>, zugleich Parteivors. der FDP, vorgelegt. Vertriebenenminister <span class="fst-italic d-inline-block" aria-haspopup="true" id="#GradlJohannBaptist_1957-10-15">
+                        <popup-info data-html="true" data-title="Johann Baptist Gradl" data-content="<a class='kgparl-link' href='GradlJohannBaptist_1957-10-15.html'&gt;Weitere Daten</a&gt;">Gradl</popup-info></span> erhielt ihn durch Boten, der Fraktionsvors. der CDU/CSU bekam ihn durch <span class="fst-italic d-inline-block" aria-haspopup="true" id="#ErlerFritz_1949-09-07">
+                        <popup-info data-html="true" data-title="Fritz Erler" data-content="<a class='kgparl-link' href='ErlerFritz_1949-09-07.html'&gt;Weitere Daten</a&gt;">Erler</popup-info></span> zur Einsicht und Staatssekretär <span class="fst-italic d-inline-block" aria-haspopup="true" id="#HaseKarl-Guenthervon">
+                        <popup-info data-html="true" data-title="Karl-Günther von Hase" data-content="<a class='kgparl-link' href='HaseKarl-Guenthervon.html'&gt;Weitere Daten</a&gt;">von Hase</popup-info></span> durch den Pressesprecher der SPD <span class="fst-italic d-inline-block" aria-haspopup="true" id="#StallbergFritz">
+                        <popup-info data-html="true" data-title="Fritz Stallberg" data-content="<a class='kgparl-link' href='StallbergFritz.html'&gt;Weitere Daten</a&gt;">Stallberg</popup-info></span>. Vgl. <a href="https://www.fraktionsprotokolle.de/literaturregister.html?id=" class="kgparl-link" target="_blank">»Der Spiegel« Nr. 15 vom 4.4.1966, S. 47</a>. – Vor der zweiten »Offenen Antwort« vom 15.4.1966 informierte am 14.4. <span class="fst-italic d-inline-block" aria-haspopup="true" id="#WehnerHerbert_1949-09-07">
+                        <popup-info data-html="true" data-title="Herbert Wehner" data-content="<a class='kgparl-link' href='WehnerHerbert_1949-09-07.html'&gt;Weitere Daten</a&gt;">Wehner</popup-info></span> persönlich <span class="fst-italic d-inline-block" aria-haspopup="true" id="#MendeErich_1949-09-07">
+                        <popup-info data-html="true" data-title="Erich Mende" data-content="<a class='kgparl-link' href='MendeErich_1949-09-07.html'&gt;Weitere Daten</a&gt;">Mende</popup-info></span> auch in seiner Eigenschaft als Vizekanzler (Bundeskanzler <span class="fst-italic d-inline-block" aria-haspopup="true" id="#ErhardLudwig_1949-09-07">
+                        <popup-info data-html="true" data-title="Ludwig Erhard" data-content="<a class='kgparl-link' href='ErhardLudwig_1949-09-07.html'&gt;Weitere Daten</a&gt;">Erhard</popup-info></span> war am Tegernsee) und anschließend Minister <span class="fst-italic d-inline-block" aria-haspopup="true" id="#GradlJohannBaptist_1957-10-15">
+                        <popup-info data-html="true" data-title="Johann Baptist Gradl" data-content="<a class='kgparl-link' href='GradlJohannBaptist_1957-10-15.html'&gt;Weitere Daten</a&gt;">Gradl</popup-info></span>. Vgl. <a href="https://www.fraktionsprotokolle.de/literaturregister.html?id=" class="kgparl-link" target="_blank">»Der Spiegel« Nr. 18 vom 25.4.1966, S. 37 und 39</a>.</p>
+                  						<a class="fn-back kgparl-link" href="#fnref_spd_04_1965_06_23_t1435_EP_FN003">↩</a></div>
+               <div class="footnotes d-flex" id="note__3"><a name="fn6"><a href="#fna_6"><span style="font-size:7pt;vertical-align:super; margin-right: 0.4em">6</span></a></a>
+                  							
+                  <p xmlns:local="http://dse-static.foo.bar"  xmlns:xs="http://www.w3.org/2001/XMLSchema">Vgl. 
+                     <tei:ref>
+                        <tei:target>#spd-05_1966-04-26-t1500_EP_SVP-1</tei:target>Nr. 144, TOP 1</tei:ref>.</p>
+                  						<a class="fn-back kgparl-link" href="#fnref_spd_04_1965_06_23_t1435_EP_FN003">↩</a></div>
+               <div class="footnotes d-flex" id="note__10"><a name="fn7"><a href="#fna_7"><span style="font-size:7pt;vertical-align:super; margin-right: 0.4em">7</span></a></a>
+                  							
+                  <p xmlns:local="http://dse-static.foo.bar"  xmlns:xs="http://www.w3.org/2001/XMLSchema">Am 15.3.1966 hatte Joachim <span class="fst-italic d-inline-block" aria-haspopup="true" id="#HerrmannJoachim">
+                        <popup-info data-html="true" data-title="Joachim Herrmann" data-content="<a class='kgparl-link' href='HerrmannJoachim.html'&gt;Weitere Daten</a&gt;">Herrmann</popup-info></span>, Staatssekretär für gesamtdeutsche Fragen der DDR, sich in einem Schreiben an die
+                     Fraktionsvors. der SPD in den Landtagen von Bayern, Hessen und Niedersachsen zur Frage
+                     eines »kleinen Grenzverkehrs« geäußert, wie er »zum Beispiel von seiten der SPD-Landtagsfraktion
+                     in Bayern« erörtert worden sei. Abgedr. in <a href="https://www.fraktionsprotokolle.de/literaturregister.html?id=" class="kgparl-link" target="_blank">Dokumente zur Deutschlandpolitik IV, 12, 1. Hbd., S. 323 f.</a> Das »Neue Deutschland« befaßte sich in einem Artikel vom 5.4.1966 mit Anregungen
+                     aus Kreisen der SPD, mit »Kleinen Schritten«, wie z. B. der Einrichtung eines kleinen
+                     Grenzverkehrs zu beginnen und nannte dies eine Aufgabe für Regierungsverhandlungen
+                     beider deutscher Staaten. Vgl. <a href="https://www.fraktionsprotokolle.de/literaturregister.html?id=" class="kgparl-link" target="_blank">AdG 1966, S. 12465</a>. <span class="fst-italic d-inline-block" aria-haspopup="true" id="#WehnerHerbert_1949-09-07">
+                        <popup-info data-html="true" data-title="Herbert Wehner" data-content="<a class='kgparl-link' href='WehnerHerbert_1949-09-07.html'&gt;Weitere Daten</a&gt;">Wehner</popup-info></span> hatte noch im März mit <span class="fst-italic d-inline-block" aria-haspopup="true" id="#ErhardLudwig_1949-09-07">
+                        <popup-info data-html="true" data-title="Ludwig Erhard" data-content="<a class='kgparl-link' href='ErhardLudwig_1949-09-07.html'&gt;Weitere Daten</a&gt;">Erhard</popup-info></span> gesprochen, »um die Regierung zu veranlassen, zu der Anregung des ›Kleinen Grenzverkehrs‹
+                     Stellung zu nehmen.« <a href="https://www.fraktionsprotokolle.de/literaturregister.html?id=" class="kgparl-link" target="_blank">»Sitzung des Präsidiums am 25.3.1966«, AdsD, Präsidium v. 5. Nov.1965 bis Juni 1966</a>. Bundeskanzler <span class="fst-italic d-inline-block" aria-haspopup="true" id="#ErhardLudwig_1949-09-07">
+                        <popup-info data-html="true" data-title="Ludwig Erhard" data-content="<a class='kgparl-link' href='ErhardLudwig_1949-09-07.html'&gt;Weitere Daten</a&gt;">Erhard</popup-info></span> lehnte in einem Interview in der »Welt am Sonntag« vom 9.4.1966 (abgedr. auch in
+                     <a href="https://www.fraktionsprotokolle.de/literaturregister.html?id=" class="kgparl-link" target="_blank">Bulletin Nr. 49 vom 13.4.1966, S. 385</a>) »Regierungsverhandlungen mit den Verantwortlichen für den Schießbefehl« ab.</p>
+                  						<a class="fn-back kgparl-link" href="#fnref_spd_04_1965_06_23_t1435_EP_FN003">↩</a></div>
+               <div class="footnotes d-flex" id="note__6"><a name="fn8"><a href="#fna_8"><span style="font-size:7pt;vertical-align:super; margin-right: 0.4em">8</span></a></a>
+                  							
+                  <p xmlns:local="http://dse-static.foo.bar"  xmlns:xs="http://www.w3.org/2001/XMLSchema">Der Hamburger Innensenator Heinz <span class="fst-italic d-inline-block" aria-haspopup="true" id="#RuhnauHeinz">
+                        <popup-info data-html="true" data-title="Heinz Ruhnau" data-content="<a class='kgparl-link' href='RuhnauHeinz.html'&gt;Weitere Daten</a&gt;">Ruhnau</popup-info></span> hatte am 20.4.1966 auf einer Pressekonferenz mitgeteilt, daß in Hamburg eine beschränkte
+                     Freigabe für den Bezug von Zeitungen und Drucksachen »aus der sowjetischen Besatzungszone«
+                     verfügt worden sei, für die auf Antrag eine Genehmigung von der Innenbehörde erteilt
+                     werde. Eine ähnliche Regelung hatte die hessische Staatsregierung schon zuvor eingeführt.
+                     Vgl. <a href="https://www.fraktionsprotokolle.de/literaturregister.html?id=" class="kgparl-link" target="_blank">Dokumente zur Deutschlandpolitik IV, 12, 1. Hbd., S. 482-484</a>; <a href="https://www.fraktionsprotokolle.de/literaturregister.html?id=" class="kgparl-link" target="_blank">AdG 1966, S. 12467</a>. – Zur strafrechtlichen Problematik und zu dem früheren Versuch eines Zeitungsaustausches
+                     siehe 
+                     <tei:ref>
+                        <tei:target>#spd-04_1964-04-28-t1510_EP_FN047</tei:target>Nr. 83, Anm. 47</tei:ref>.</p>
+                  						<a class="fn-back kgparl-link" href="#fnref_spd_04_1965_06_23_t1435_EP_FN003">↩</a></div>
+               <div class="footnotes d-flex" id="note__15"><a name="fn9"><a href="#fna_9"><span style="font-size:7pt;vertical-align:super; margin-right: 0.4em">9</span></a></a>
+                  							
+                  <p xmlns:local="http://dse-static.foo.bar"  xmlns:xs="http://www.w3.org/2001/XMLSchema">Bei seinem Besuch in Washington vom 4.-6.4.1966 traf <span class="fst-italic d-inline-block" aria-haspopup="true" id="#ErlerFritz_1949-09-07">
+                        <popup-info data-html="true" data-title="Fritz Erler" data-content="<a class='kgparl-link' href='ErlerFritz_1949-09-07.html'&gt;Weitere Daten</a&gt;">Erler</popup-info></span> u. a. mit Vertretern der <span class="fst-italic d-inline-block" aria-haspopup="true" id="#JohnsonLyndonB">
+                        <popup-info data-html="true" data-title="Lyndon B. Johnson" data-content="<a class='kgparl-link' href='JohnsonLyndonB.html'&gt;Weitere Daten</a&gt;">Johnson</popup-info></span>-Administration (<span class="fst-italic d-inline-block" aria-haspopup="true" id="#HumphreyHubertH">
+                        <popup-info data-html="true" data-title="Hubert H. Humphrey" data-content="<a class='kgparl-link' href='HumphreyHubertH.html'&gt;Weitere Daten</a&gt;">Humphrey</popup-info></span>, <span class="fst-italic d-inline-block" aria-haspopup="true" id="#McNamaraRobert">
+                        <popup-info data-html="true" data-title="Robert McNamara" data-content="<a class='kgparl-link' href='McNamaraRobert.html'&gt;Weitere Daten</a&gt;">McNamara</popup-info></span>, <span class="fst-italic d-inline-block" aria-haspopup="true" id="#RostowEugeneV">
+                        <popup-info data-html="true" data-title="Eugene V. Rostow" data-content="<a class='kgparl-link' href='RostowEugeneV.html'&gt;Weitere Daten</a&gt;">Rostow</popup-info></span>, <span class="fst-italic d-inline-block" aria-haspopup="true" id="#RuskDeanD">
+                        <popup-info data-html="true" data-title="Dean D. Rusk" data-content="<a class='kgparl-link' href='RuskDeanD.html'&gt;Weitere Daten</a&gt;">Rusk</popup-info></span>) und den Senatoren <span class="fst-italic d-inline-block" aria-haspopup="true" id="#FulbrightJamesW">
+                        <popup-info data-html="true" data-title="James W. Fulbright" data-content="<a class='kgparl-link' href='FulbrightJamesW.html'&gt;Weitere Daten</a&gt;">Fulbright</popup-info></span>, <span class="fst-italic d-inline-block" aria-haspopup="true" id="#MansfieldMichaelJ">
+                        <popup-info data-html="true" data-title="Michael J. Mansfield" data-content="<a class='kgparl-link' href='MansfieldMichaelJ.html'&gt;Weitere Daten</a&gt;">Mansfield</popup-info></span> und <span class="fst-italic d-inline-block" aria-haspopup="true" id="#PastoreJohnO">
+                        <popup-info data-html="true" data-title="John O. Pastore" data-content="<a class='kgparl-link' href='PastoreJohnO.html'&gt;Weitere Daten</a&gt;">Pastore</popup-info></span> zusammen. Unterlagen zu diesen Gesprächen in NL Erler, Informationsreisen USA, Programme
+                     und Reiseunterlagen, 1954-1966. <span class="fst-italic d-inline-block" aria-haspopup="true" id="#ErlerFritz_1949-09-07">
+                        <popup-info data-html="true" data-title="Fritz Erler" data-content="<a class='kgparl-link' href='ErlerFritz_1949-09-07.html'&gt;Weitere Daten</a&gt;">Erler</popup-info></span> hatte darüber schon im »Parteirat, 14.4.1966« berichtet; Wortprotokoll in AdsD, PV
+                     vom 22.9.1965 bis 15.7.1966. Die Eindrücke und Schlußfolgerungen aus diesen Gesprächen
+                     skizzierte <span class="fst-italic d-inline-block" aria-haspopup="true" id="#ErlerFritz_1949-09-07">
+                        <popup-info data-html="true" data-title="Fritz Erler" data-content="<a class='kgparl-link' href='ErlerFritz_1949-09-07.html'&gt;Weitere Daten</a&gt;">Erler</popup-info></span> in einem Vortrag vor der Deutschen Gesellschaft für Auswärtige Politik am 12.5.1966
+                     mit dem Titel: <a href="https://www.fraktionsprotokolle.de/literaturregister.html?id=" class="kgparl-link" target="_blank">»Deutschland und die Krise der NATO«; abgedr. in: Erler, Politik, S. 598-622</a>.</p>
+                  						<a class="fn-back kgparl-link" href="#fnref_spd_04_1965_06_23_t1435_EP_FN003">↩</a></div>
+               <div class="footnotes d-flex" id="note__4"><a name="fn10"><a href="#fna_10"><span style="font-size:7pt;vertical-align:super; margin-right: 0.4em">10</span></a></a>
+                  							
+                  <p xmlns:local="http://dse-static.foo.bar"  xmlns:xs="http://www.w3.org/2001/XMLSchema">Vgl. 
+                     <tei:ref>
+                        <tei:target>#spd-05_1966-03-15-t1510_EP_SVP-1</tei:target>Nr. 140, TOP 1</tei:ref>. Zum jüngsten Stand vgl. <a href="https://www.fraktionsprotokolle.de/literaturregister.html?id=" class="kgparl-link" target="_blank">AdG 1966, S. 12456-12458</a>.</p>
+                  						<a class="fn-back kgparl-link" href="#fnref_spd_04_1965_06_23_t1435_EP_FN003">↩</a></div>
+               <div class="footnotes d-flex" id="note__3"><a name="fn11"><a href="#fna_11"><span style="font-size:7pt;vertical-align:super; margin-right: 0.4em">11</span></a></a>
+                  							
+                  <p xmlns:local="http://dse-static.foo.bar"  xmlns:xs="http://www.w3.org/2001/XMLSchema">Dem Vertrag über die Westeuropäische Union vom 17.3.1948 war die Bundesrepublik mit
+                     der Londoner Schlußakte vom Oktober 1954 beigetreten. Er sah in Art. IV vor, daß wenn
+                     einer der Vertragsstaaten »das Ziel eines bewaffneten Angriffes in Europa werden sollte«,
+                     würden die anderen Vertragsparteien dem angegriffenen Staat »alle in ihrer Macht liegende
+                     militärische und sonstige Hilfe und Unterstützung leisten«. Vgl. <a href="https://www.fraktionsprotokolle.de/literaturregister.html?id=" class="kgparl-link" target="_blank">AdG 1948/49, S. 1422 f. und 1954, S. 4765-4770</a>.</p>
+                  						<a class="fn-back kgparl-link" href="#fnref_spd_04_1965_06_23_t1435_EP_FN003">↩</a></div>
+               <div class="footnotes d-flex" id="note__3"><a name="fn12"><a href="#fna_12"><span style="font-size:7pt;vertical-align:super; margin-right: 0.4em">12</span></a></a>
+                  							
+                  <p xmlns:local="http://dse-static.foo.bar"  xmlns:xs="http://www.w3.org/2001/XMLSchema">Vgl. 
+                     <tei:ref>
+                        <tei:target>#spd-05_1966-03-15-t1510_EP_SVP-1</tei:target>Nr. 140, TOP 1</tei:ref>.</p>
+                  						<a class="fn-back kgparl-link" href="#fnref_spd_04_1965_06_23_t1435_EP_FN003">↩</a></div>
+               <div class="footnotes d-flex" id="note__6"><a name="fn13"><a href="#fna_13"><span style="font-size:7pt;vertical-align:super; margin-right: 0.4em">13</span></a></a>
+                  							
+                  <p xmlns:local="http://dse-static.foo.bar"  xmlns:xs="http://www.w3.org/2001/XMLSchema">Vgl. dazu <span class="fst-italic d-inline-block" aria-haspopup="true" id="#ErlerFritz_1949-09-07">
+                        <popup-info data-html="true" data-title="Fritz Erler" data-content="<a class='kgparl-link' href='ErlerFritz_1949-09-07.html'&gt;Weitere Daten</a&gt;">Erlers</popup-info></span> Bericht und Diskussionsbeiträge im »Parteirat 14.4.1966« (siehe 
+                     <tei:ref>
+                        <tei:target>#spd-05_1966-04-19-t1515_EP_FN009</tei:target>Anm. 9</tei:ref>) sowie sein Interview mit Hilde <span class="fst-italic d-inline-block" aria-haspopup="true" id="#PurwinHilde">
+                        <popup-info data-html="true" data-title="Hilde Purwin, geb. Burckhardt, geschiedene Beetz" data-content="<a class='kgparl-link' href='PurwinHilde.html'&gt;Weitere Daten</a&gt;">Purwin</popup-info></span>
+                     								<a href="https://www.fraktionsprotokolle.de/literaturregister.html?id=" class="kgparl-link" target="_blank">»Erler: NATO muß den Bruch mit Paris vermeiden«, in: »Neue Rhein-/Neue Ruhr-Zeitung«
+                        vom 14.4.1966</a>.</p>
+                  						<a class="fn-back kgparl-link" href="#fnref_spd_04_1965_06_23_t1435_EP_FN003">↩</a></div>
+               <div class="footnotes d-flex" id="note__4"><a name="fn14"><a href="#fna_14"><span style="font-size:7pt;vertical-align:super; margin-right: 0.4em">14</span></a></a>
+                  							
+                  <p xmlns:local="http://dse-static.foo.bar"  xmlns:xs="http://www.w3.org/2001/XMLSchema">Zum Stand der Verhandlungen der sog. <span class="fst-italic d-inline-block" aria-haspopup="true" id="#KennedyJohnF">
+                        <popup-info data-html="true" data-title="John F. Kennedy" data-content="<a class='kgparl-link' href='KennedyJohnF.html'&gt;Weitere Daten</a&gt;">Kennedy</popup-info></span>-Runde vgl. <a href="https://www.fraktionsprotokolle.de/literaturregister.html?id=" class="kgparl-link" target="_blank">AdG 1966, S. 12459</a>.</p>
+                  						<a class="fn-back kgparl-link" href="#fnref_spd_04_1965_06_23_t1435_EP_FN003">↩</a></div>
+               <div class="footnotes d-flex" id="note__14"><a name="fn15"><a href="#fna_15"><span style="font-size:7pt;vertical-align:super; margin-right: 0.4em">15</span></a></a>
+                  							
+                  <p xmlns:local="http://dse-static.foo.bar"  xmlns:xs="http://www.w3.org/2001/XMLSchema">Die »Note zur Abrüstung und zur Sicherung des Friedens«, die sog. Friedensnote, war
+                     am 25.3.1966 von der BReg allen Staaten, mit denen sie diplomatische Beziehungen unterhielt
+                     sowie den arabischen Staaten und den Staaten des Warschauer Pakts – jedoch mit Ausnahme
+                     der DDR – übersandt worden. Abgedr. u. a. in Europa-Archiv 1966, D 171-175; <a href="https://www.fraktionsprotokolle.de/literaturregister.html?id=" class="kgparl-link" target="_blank">Dokumente zur Deutschlandpolitik IV, 12, 1. Hbd., S. 381-385</a>; <a href="https://www.fraktionsprotokolle.de/literaturregister.html?id=" class="kgparl-link" target="_blank">Bulletin Nr. 42 vom 26.3.1966, S. 329-331</a>; <a href="https://www.fraktionsprotokolle.de/literaturregister.html?id=" class="kgparl-link" target="_blank">AdG 1966, S. 12402-12409</a>. – Zur Reaktion auf die »Friedensnote« bis zum 19.4.1966 vgl. <a href="https://www.fraktionsprotokolle.de/literaturregister.html?id=" class="kgparl-link" target="_blank">AdG 1966, S. 12439 und 12444 f.</a>; <a href="https://www.fraktionsprotokolle.de/literaturregister.html?id=" class="kgparl-link" target="_blank">Bulletin Nr. 48 vom 7.4.1966, S. 379, Nr. 50 vom 15.4.1966, S. 393</a>; zum Zusammenhang und zur Bewertung vgl. u. a. <a href="https://www.fraktionsprotokolle.de/literaturregister.html?id=" class="kgparl-link" target="_blank">
+                        									Hacke, Außenpolitik, S. 121-123</a>; <a href="https://www.fraktionsprotokolle.de/literaturregister.html?id=" class="kgparl-link" target="_blank">
+                        									Hildebrand, Erhard, S. 188-190</a>; <a href="https://www.fraktionsprotokolle.de/literaturregister.html?id=" class="kgparl-link" target="_blank">Carl Carstens, Die deutsche Friedensnote vom 25. März 1966, in: Schröder, Ludwig Erhard,
+                        Beiträge, S. 383-392</a>.</p>
+                  						<a class="fn-back kgparl-link" href="#fnref_spd_04_1965_06_23_t1435_EP_FN003">↩</a></div>
+               <div class="footnotes d-flex" id="note__6"><a name="fn16"><a href="#fna_16"><span style="font-size:7pt;vertical-align:super; margin-right: 0.4em">16</span></a></a>
+                  							
+                  <p xmlns:local="http://dse-static.foo.bar"  xmlns:xs="http://www.w3.org/2001/XMLSchema">Bei seinem Besuch in New York hatte <span class="fst-italic d-inline-block" aria-haspopup="true" id="#ErlerFritz_1949-09-07">
+                        <popup-info data-html="true" data-title="Fritz Erler" data-content="<a class='kgparl-link' href='ErlerFritz_1949-09-07.html'&gt;Weitere Daten</a&gt;">Erler</popup-info></span> die deutsche Frage vorrangig mit Botschaftern bei der UNO erörtert. Vgl. <a href="https://www.fraktionsprotokolle.de/literaturregister.html?id=" class="kgparl-link" target="_blank">
+                        									Erler, Politik, S. 619 f.</a>; <a href="https://www.fraktionsprotokolle.de/literaturregister.html?id=" class="kgparl-link" target="_blank">»Die SPD-Fraktion teilt mit« Nr. 143/66 vom 1.4.1966</a>.</p>
+                  						<a class="fn-back kgparl-link" href="#fnref_spd_04_1965_06_23_t1435_EP_FN003">↩</a></div>
+               <div class="footnotes d-flex" id="note__4"><a name="fn17"><a href="#fna_17"><span style="font-size:7pt;vertical-align:super; margin-right: 0.4em">17</span></a></a>
+                  							
+                  <p xmlns:local="http://dse-static.foo.bar"  xmlns:xs="http://www.w3.org/2001/XMLSchema">Der Bericht der »<span class="fst-italic d-inline-block" aria-haspopup="true" id="#TroegerHeinrich">
+                        <popup-info data-html="true" data-title="Heinrich Troeger" data-content="<a class='kgparl-link' href='TroegerHeinrich.html'&gt;Weitere Daten</a&gt;">Troeger</popup-info></span>-Kommission« war am 10.2.1966 übergeben worden; siehe 
+                     <tei:ref>
+                        <tei:target>#spd-05_1966-03-22-t1700_EP_FN007</tei:target>Nr. 141, Anm. 7</tei:ref>.</p>
+                  						<a class="fn-back kgparl-link" href="#fnref_spd_04_1965_06_23_t1435_EP_FN003">↩</a></div>
+               <div class="footnotes d-flex" id="note__6"><a name="fn18"><a href="#fna_18"><span style="font-size:7pt;vertical-align:super; margin-right: 0.4em">18</span></a></a>
+                  							
+                  <p xmlns:local="http://dse-static.foo.bar"  xmlns:xs="http://www.w3.org/2001/XMLSchema">Seit November 1965 hatte sich die SPD bemüht, die Bund-Länder-Fragen in einem sog.
+                     Länderausschuß aus den Ministerpräsidenten und den SPD-Fraktionsvors. der Länder zu
+                     koordinieren. Den Vors. in diesem Kreis hatten die für die Koordinierung der Länderpolitik
+                     verantwortlichen Parteivorstandsmitgl. <span class="fst-italic d-inline-block" aria-haspopup="true" id="#ErlerFritz_1949-09-07">
+                        <popup-info data-html="true" data-title="Fritz Erler" data-content="<a class='kgparl-link' href='ErlerFritz_1949-09-07.html'&gt;Weitere Daten</a&gt;">Erler</popup-info></span> und <span class="fst-italic d-inline-block" aria-haspopup="true" id="#ZinnGeorg-August_1949-09-07">
+                        <popup-info data-html="true" data-title="Georg-August Zinn" data-content="<a class='kgparl-link' href='ZinnGeorg-August_1949-09-07.html'&gt;Weitere Daten</a&gt;">Zinn</popup-info></span>. Vgl. <a href="https://www.fraktionsprotokolle.de/literaturregister.html?id=" class="kgparl-link" target="_blank">»Vorsitzendenbesprechung Freitag, 5. Nov.1965« und Rundbrief Erlers an die Mitgl.
+                        des Präsidiums vom 16.12.1965, AdsD, Präsidium v. 5. Nov.1965 bis Juni 1966</a>.</p>
+                  						<a class="fn-back kgparl-link" href="#fnref_spd_04_1965_06_23_t1435_EP_FN003">↩</a></div>
+               <div class="footnotes d-flex" id="note__19"><a name="fn19"><a href="#fna_19"><span style="font-size:7pt;vertical-align:super; margin-right: 0.4em">19</span></a></a>
+                  							
+                  <p xmlns:local="http://dse-static.foo.bar"  xmlns:xs="http://www.w3.org/2001/XMLSchema">
+                     								<span class="fst-italic d-inline-block" aria-haspopup="true" id="#ZinnGeorg-August_1949-09-07">
+                        <popup-info data-html="true" data-title="Georg-August Zinn" data-content="<a class='kgparl-link' href='ZinnGeorg-August_1949-09-07.html'&gt;Weitere Daten</a&gt;">Zinn</popup-info></span> war zusammen mit <span class="fst-italic d-inline-block" aria-haspopup="true" id="#ErlerFritz_1949-09-07">
+                        <popup-info data-html="true" data-title="Fritz Erler" data-content="<a class='kgparl-link' href='ErlerFritz_1949-09-07.html'&gt;Weitere Daten</a&gt;">Erler</popup-info></span>, <span class="fst-italic d-inline-block" aria-haspopup="true" id="#KuehnFriedrich_1961-10-17">
+                        <popup-info data-html="true" data-title="Friedrich Kühn" data-content="<a class='kgparl-link' href='KuehnFriedrich_1961-10-17.html'&gt;Weitere Daten</a&gt;">Kühn</popup-info></span> und <span class="fst-italic d-inline-block" aria-haspopup="true" id="#KnoeringenWaldemar_1949-09-07">
+                        <popup-info data-html="true" data-title="Waldemar von Knoeringen" data-content="<a class='kgparl-link' href='KnoeringenWaldemar_1949-09-07.html'&gt;Weitere Daten</a&gt;">von Knoeringen</popup-info></span> in der »Sitzung des Parteivorstandes am 12. und 13.11.1965« mit der Koordinierung
+                     der SPD-Länderpolitik beauftragt worden. <a href="https://www.fraktionsprotokolle.de/literaturregister.html?id=" class="kgparl-link" target="_blank">AdsD, PV vom 22.9.1965 bis 15.7.1966</a>. Auf Anregung des Präsidiums hatte der Fraktionsvorstand einen Arbeitskreis zur Finanzreform
+                     eingesetzt, dem <span class="fst-italic d-inline-block" aria-haspopup="true" id="#MoellerAlex_1961-10-17">
+                        <popup-info data-html="true" data-title="Alex Möller" data-content="<a class='kgparl-link' href='MoellerAlex_1961-10-17.html'&gt;Weitere Daten</a&gt;">Möller</popup-info></span>, <span class="fst-italic d-inline-block" aria-haspopup="true" id="#SchoettleErwin_1949-09-07">
+                        <popup-info data-html="true" data-title="Erwin Schoettle" data-content="<a class='kgparl-link' href='SchoettleErwin_1949-09-07.html'&gt;Weitere Daten</a&gt;">Schoettle</popup-info></span>, <span class="fst-italic d-inline-block" aria-haspopup="true" id="#SchaeferFriedrich_1957-10-15">
+                        <popup-info data-html="true" data-title="Friedrich Schäfer" data-content="<a class='kgparl-link' href='SchaeferFriedrich_1957-10-15.html'&gt;Weitere Daten</a&gt;">Schäfer</popup-info></span>, <span class="fst-italic d-inline-block" aria-haspopup="true" id="#MuethlingHans_1965-10-19">
+                        <popup-info data-html="true" data-title="Hans Müthling" data-content="<a class='kgparl-link' href='MuethlingHans_1965-10-19.html'&gt;Weitere Daten</a&gt;">Müthling</popup-info></span>, <span class="fst-italic d-inline-block" aria-haspopup="true" id="#ArndtAdolf_1949-09-07">
+                        <popup-info data-html="true" data-title="Adolf Arndt" data-content="<a class='kgparl-link' href='ArndtAdolf_1949-09-07.html'&gt;Weitere Daten</a&gt;">Arndt</popup-info></span> und <span class="fst-italic d-inline-block" aria-haspopup="true" id="#KripsUrsula_1965-10-19">
+                        <popup-info data-html="true" data-title="Ursula Krips" data-content="<a class='kgparl-link' href='KripsUrsula_1965-10-19.html'&gt;Weitere Daten</a&gt;">Krips</popup-info></span> angehörten. Im Auftrag des Präsidiums sollte sich eine Gruppe von Sachverständigen
+                     aus der Fraktion und Partei unter Leitung <span class="fst-italic d-inline-block" aria-haspopup="true" id="#MoellerAlex_1961-10-17">
+                        <popup-info data-html="true" data-title="Alex Möller" data-content="<a class='kgparl-link' href='MoellerAlex_1961-10-17.html'&gt;Weitere Daten</a&gt;">Möllers</popup-info></span> und <span class="fst-italic d-inline-block" aria-haspopup="true" id="#ZinnGeorg-August_1949-09-07">
+                        <popup-info data-html="true" data-title="Georg-August Zinn" data-content="<a class='kgparl-link' href='ZinnGeorg-August_1949-09-07.html'&gt;Weitere Daten</a&gt;">Zinns</popup-info></span> mit dem <span class="fst-italic d-inline-block" aria-haspopup="true" id="#TroegerHeinrich">
+                        <popup-info data-html="true" data-title="Heinrich Troeger" data-content="<a class='kgparl-link' href='TroegerHeinrich.html'&gt;Weitere Daten</a&gt;">Troeger</popup-info></span>-Gutachten befassen. <a href="https://www.fraktionsprotokolle.de/literaturregister.html?id=" class="kgparl-link" target="_blank">»Sitzung des Präsidiums am 11.2.1966«, AdsD, Präsidium v. 5. Nov.1965 bis Juni 1966</a>. – <a href="https://www.fraktionsprotokolle.de/literaturregister.html?id=" class="kgparl-link" target="_blank">SPD-Pressemitteilungen Nr. 73/66 vom 11.2.1966</a>. Vgl. auch 
+                     <tei:ref>
+                        <tei:target>#spd-05_1966-04-19-t1515_EP_FN018</tei:target>Anm. 18</tei:ref>.</p>
+                  						<a class="fn-back kgparl-link" href="#fnref_spd_04_1965_06_23_t1435_EP_FN003">↩</a></div>
+               <div class="footnotes d-flex" id="note__4"><a name="fn20"><a href="#fna_20"><span style="font-size:7pt;vertical-align:super; margin-right: 0.4em">20</span></a></a>
+                  							
+                  <p xmlns:local="http://dse-static.foo.bar"  xmlns:xs="http://www.w3.org/2001/XMLSchema">Zu <span class="fst-italic d-inline-block" aria-haspopup="true" id="#TroegerHeinrich">
+                        <popup-info data-html="true" data-title="Heinrich Troeger" data-content="<a class='kgparl-link' href='TroegerHeinrich.html'&gt;Weitere Daten</a&gt;">Troeger</popup-info></span>, 1958-1969 Vizepräsident der Deutschen Bundesbank, vgl. 
+                     <tei:ref>
+                        <tei:target>#spd-04_1964-03-10-t1430_EP_FN017</tei:target>Nr. 79, Anm. 17</tei:ref>.</p>
+                  						<a class="fn-back kgparl-link" href="#fnref_spd_04_1965_06_23_t1435_EP_FN003">↩</a></div>
+               <div class="footnotes d-flex" id="note__5"><a name="fn21"><a href="#fna_21"><span style="font-size:7pt;vertical-align:super; margin-right: 0.4em">21</span></a></a>
+                  							
+                  <p xmlns:local="http://dse-static.foo.bar"  xmlns:xs="http://www.w3.org/2001/XMLSchema">
+                     								<span class="fst-italic d-inline-block" aria-haspopup="true" id="#MoellerAlex_1961-10-17">
+                        <popup-info data-html="true" data-title="Alex Möller" data-content="<a class='kgparl-link' href='MoellerAlex_1961-10-17.html'&gt;Weitere Daten</a&gt;">Möller</popup-info></span> hatte am 14.2.1966 eine ausführliche Stellungnahme zum <span class="fst-italic d-inline-block" aria-haspopup="true" id="#TroegerHeinrich">
+                        <popup-info data-html="true" data-title="Heinrich Troeger" data-content="<a class='kgparl-link' href='TroegerHeinrich.html'&gt;Weitere Daten</a&gt;">Troeger</popup-info></span>-Gutachten abgegeben. Er bezog sich dabei besonders auf die Vorstellungen zur Neuordnung
+                     der Finanzverfassung, wie sie auf der Wiesbadener Parlamentarierkonferenz vom 8.5.1965
+                     in der Arbeitsgemeinschaft »Finanzverfassung« entwickelt worden waren. <a href="https://www.fraktionsprotokolle.de/literaturregister.html?id=" class="kgparl-link" target="_blank">SPD-Pressemitteilungen Nr. 78/66 vom 14.2.1966</a>.</p>
+                  						<a class="fn-back kgparl-link" href="#fnref_spd_04_1965_06_23_t1435_EP_FN003">↩</a></div>
+               <div class="footnotes d-flex" id="note__3"><a name="fn22"><a href="#fna_22"><span style="font-size:7pt;vertical-align:super; margin-right: 0.4em">22</span></a></a>
+                  							
+                  <p xmlns:local="http://dse-static.foo.bar"  xmlns:xs="http://www.w3.org/2001/XMLSchema">In Wiesbaden, dem Amtssitz von <span class="fst-italic d-inline-block" aria-haspopup="true" id="#ZinnGeorg-August_1949-09-07">
+                        <popup-info data-html="true" data-title="Georg-August Zinn" data-content="<a class='kgparl-link' href='ZinnGeorg-August_1949-09-07.html'&gt;Weitere Daten</a&gt;">Zinn</popup-info></span>, befand sich die Koordinationsstelle für die Länderpolitik. – Vgl. auch die vorige
+                     Anmerkung.</p>
+                  						<a class="fn-back kgparl-link" href="#fnref_spd_04_1965_06_23_t1435_EP_FN003">↩</a></div>
+               <div class="footnotes d-flex" id="note__3"><a name="fn23"><a href="#fna_23"><span style="font-size:7pt;vertical-align:super; margin-right: 0.4em">23</span></a></a>
+                  							
+                  <p xmlns:local="http://dse-static.foo.bar"  xmlns:xs="http://www.w3.org/2001/XMLSchema">Der Parteitag der SPD vom 1.-5.6.1966 in Dortmund verabschiedete eine »Entschließung
+                     zur Finanzreform«, in der anknüpfend an das Gutachten der Sachverständigenkommission
+                     Vorschläge für »I. Sofortmaßnahmen«, »II.« eine »Fortentwicklung der finanzverfassungsrechtlichen
+                     Bestimmungen«, »III.« für einen »Gemeinsamen kurz- und mittelfristigen Finanzplan«
+                     gemacht wurden. Abgedr. u. a. in <a href="https://www.fraktionsprotokolle.de/literaturregister.html?id=" class="kgparl-link" target="_blank">Jahrbuch SPD 1966/67, S. 284-287</a>.</p>
+                  						<a class="fn-back kgparl-link" href="#fnref_spd_04_1965_06_23_t1435_EP_FN003">↩</a></div>
+               <div class="footnotes d-flex" id="note__3"><a name="fn24"><a href="#fna_24"><span style="font-size:7pt;vertical-align:super; margin-right: 0.4em">24</span></a></a>
+                  							
+                  <p xmlns:local="http://dse-static.foo.bar"  xmlns:xs="http://www.w3.org/2001/XMLSchema">Es handelte sich um einen ad hoc-Ausschuß unter dem Vors. von Edwin <span class="fst-italic d-inline-block" aria-haspopup="true" id="#ZerbeEdwin_1965-10-19">
+                        <popup-info data-html="true" data-title="Edwin Zerbe" data-content="<a class='kgparl-link' href='ZerbeEdwin_1965-10-19.html'&gt;Weitere Daten</a&gt;">Zerbe</popup-info></span>, seit 1955 Landrat des Kreises Hersfeld, MdB (SPD) 1965-2.5.1967.</p>
+                  						<a class="fn-back kgparl-link" href="#fnref_spd_04_1965_06_23_t1435_EP_FN003">↩</a></div>
+               <div class="footnotes d-flex" id="note__3"><a name="fn25"><a href="#fna_25"><span style="font-size:7pt;vertical-align:super; margin-right: 0.4em">25</span></a></a>
+                  							
+                  <p xmlns:local="http://dse-static.foo.bar"  xmlns:xs="htt

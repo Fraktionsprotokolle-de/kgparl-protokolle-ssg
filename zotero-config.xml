@@ -1,0 +1,27 @@
+<zotero-config>
+     Used by get-zotero-data.pp.xql-->
+    <groupid>4606219</groupid>
+    <last-modified-version>8558</last-modified-version>
+    <!-- format json or tei -->
+    <format>json</format>
+    <data-dir>/db/apps/zotero</data-dir>
+    <base-uri>https://kgparl.de/bibl</base-uri>
+    <!-- Allowed values: auto-generated, zotero -->
+    <id-pattern>zotero</id-pattern>
+    <!-- Values used to build TEI records -->
+    <principal xmlns="http://www.tei-c.org/ns/1.0">Sven
+    Jüngerkes</principal>
+    <editor xmlns="http://www.tei-c.org/ns/1.0" role="general">Sven
+    Jüngerkes</editor>
+    <respStmt xmlns="http://www.tei-c.org/ns/1.0">
+        <resp>TEI encoding by</resp>
+        <name>Sven Jüngerkes</name>
+    </respStmt>
+    <availability xmlns="http://www.tei-c.org/ns/1.0">
+        <licence target="http://creativecommons.org/licenses/by/3.0/">
+
+            <p>Distributed under a Creative Commons Attribution 3.0
+            Unported License.</p>
+        </licence>
+    </availability>
+</zotero-config>

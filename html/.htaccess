@@ -1,0 +1,24 @@
+AuthUserFile "/usr/www/users/editih/.htpasswd"
+AuthName "Realm"
+AuthType Basic
+require valid-user
+Order Deny,Allow
+Allow from env=noauth
+
+ErrorDocument 404 /404.html
+
+RewriteEngine On
+RewriteBase /
+
+# /gnd/118629972 → /gnd.html?id=118629972 (intern, URL bleibt)
+RewriteRule ^gnd/(.+)$ /gnd.html?id=$1 [L,QSA]
+
+# /person.html?id=SchmidCarlo_1949-09-07 → /SchmidCarlo_1949-09-07.html (Redirect)
+RewriteCond %{QUERY_STRING} (?:^|&)id=([^&]+)
+RewriteRule ^person\.html$ /%1.html? [R=301,L]
+
+# /Protokoll.xml → /Protokoll.html (intern, URL bleibt .xml)
+# Ausnahme: /downloads/*.xml liefert echte XML-Dateien
+RewriteCond %{REQUEST_URI} !^/downloads/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.+)\.xml$ $1.html [L]

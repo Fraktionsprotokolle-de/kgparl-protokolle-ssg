@@ -1,0 +1,16 @@
+{
+  "languages": [
+    {
+      "code": "de",
+      "nativeName": "Deutsch",
+      "shortCode": "DE",
+      "complete": true
+    },
+    {
+      "code": "en",
+      "nativeName": "English",
+      "shortCode": "EN",
+      "complete": true
+    }
+  ]
+}
