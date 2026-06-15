@@ -4,7 +4,7 @@ Erzeugung einer statischen Webseite für die digitale Edition »Fraktionen im De
 
 ## Übersicht
 
-Dieses Projekt generiert eine statische HTML-Webseite aus TEI-XML-Quellen der parlamentarischen Fraktionsprotokolle. 
+Dieses Projekt generiert eine statische HTML-Webseite aus TEI-XML-Quellen der Protokolle von Sitzungen der Fraktionen und großen Gruppen des Deutschen Bundestags von 1949 bis 2005.
 
 ## Datenquelle
 
