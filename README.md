@@ -1,6 +1,6 @@
 # Fraktionsprotokolle – Statische Webseite
 
-Erzeugung einer statischen Webseite für die digitale Edition »Fraktionen im Deutschen Bundestag 1949–2005«der Kommission für Geschichte des Parlamentarismus und der politischen Parteien, Berlin.
+Erzeugung einer statischen Webseite für die digitale Edition »Fraktionen im Deutschen Bundestag. Sitzungsprotokolle 1949–2005«der Kommission für Geschichte des Parlamentarismus und der politischen Parteien, Berlin.
 
 ## Übersicht
 
