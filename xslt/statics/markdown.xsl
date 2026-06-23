@@ -134,9 +134,9 @@
             <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
             <script src="https://unpkg.com/showdown/dist/showdown.min.js"></script>
 
-            <script>
-              var baseUrl = "<xsl:value-of select="@url" />";
-              var pageName = "<xsl:value-of select="@name" />";
+            <script><![CDATA[
+              var baseUrl = "]]><xsl:value-of select="@url" /><![CDATA[";
+              var pageName = "]]><xsl:value-of select="@name" /><![CDATA[";
 
               function loadMarkdown(lang) {
                 var mdUrl = baseUrl.replace('md/', 'md/' + lang + '/');
@@ -147,7 +147,7 @@
                 if (localStorageAvailable) {
                   var cached = localStorage.getItem(cacheKey);
                   var cachedTime = localStorage.getItem(cacheKey + "#ts");
-                  if (cached &amp;&amp; cachedTime &amp;&amp; (Date.now() - Number(cachedTime)) &lt; cacheTTL) {
+                  if (cached && cachedTime && (Date.now() - Number(cachedTime)) < cacheTTL) {
                     $("#text").html(cached);
                     return;
                   }
@@ -190,7 +190,7 @@
                   loadMarkdown(lng);
                 });
               }
-            </script>
+            ]]></script>
           </body>
         </html>
   </xsl:result-document>

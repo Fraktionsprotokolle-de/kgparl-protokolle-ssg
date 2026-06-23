@@ -23,6 +23,7 @@
         </xsl:variable>
         <html lang="de">
             <head>
+                <base href="/" />
                 <xsl:call-template name="html_head">
                     <xsl:with-param name="html_title" select="$doc_title"></xsl:with-param>
                 </xsl:call-template>

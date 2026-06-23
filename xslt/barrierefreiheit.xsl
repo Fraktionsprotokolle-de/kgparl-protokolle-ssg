@@ -36,8 +36,7 @@
                             </p>
                             <p>
                                 Wir arbeiten kontinuierlich daran, die Zugänglichkeit und Benutzerfreundlichkeit
-                                dieser Website zu verbessern und orientieren uns dabei an den Web Content
-                                Accessibility Guidelines (WCAG) 2.1.
+                                dieser Website zu verbessern.
                             </p>
 
                             <h2>Schriftgröße anpassen</h2>
@@ -109,12 +108,6 @@
                                 gemeldete Probleme zu beheben.
                             </p>
 
-                            <h2>Durchsetzungsverfahren</h2>
-                            <p>
-                                Sollten Sie der Meinung sein, dass unsere Antwort auf Ihre Anfrage
-                                nicht zufriedenstellend war, können Sie sich an die zuständige
-                                Durchsetzungsstelle wenden.
-                            </p>
                         </article>
                     </div>
                 </main>
