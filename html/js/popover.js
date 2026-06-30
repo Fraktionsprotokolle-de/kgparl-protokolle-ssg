@@ -257,23 +257,29 @@ function createAndShowNewPopover(dayElement, date, content) {
   popover.show();
 }
 
+function getCalendarDocumentHref(host, documentId) {
+  const documentPath = String(documentId || "").replace(/\.html$/, "") + ".html";
+  return `${host}/${documentPath}`;
+}
+
 function createPopoverContent(mrpDocuments) {
   if (mrpDocuments.length > 0) {
     var host = window.location.protocol + "//" + window.location.host;
     return `<div class="event-tooltip-content">
 		${mrpDocuments
       .map(
-        (
-          doc,
-        ) => `<div class="event-tooltip-entry ${doc.fraction}">
-				<h4><a href="${host}/${doc.id}.html" class="event-tooltip-link">${doc.fraction.replace('/', '-')}</a></h4>
+        (doc) => {
+          const documentHref = getCalendarDocumentHref(host, doc.id);
+          return `<div class="event-tooltip-entry ${doc.fraction}">
+				<h4><a href="${documentHref}" class="event-tooltip-link">${doc.fraction.replace('/', '-')}</a></h4>
 			    <ul>${doc.topics
             .map(
               (element) =>
-                `<li class="turboline"><a href="${host}/${doc.id}${element.corresp && !element.corresp.startsWith('#') ? '#' : ''}${element.corresp || ''}">${element.title}</a></li>`,
+                `<li class="turboline"><a href="${documentHref}${element.corresp && !element.corresp.startsWith('#') ? '#' : ''}${element.corresp || ''}">${element.title}</a></li>`,
             )
             .join("")}</ul>
-				</div>`,
+				</div>`;
+        },
       )
       .join("<br/>")}
 		</div>`;
